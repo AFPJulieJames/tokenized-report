@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO META -->
+<title>Tokenized Report | The Weekly Editorial Brief on Digital Ownership</title>
+<meta name="description" content="Tokenized Report is the weekly editorial newsletter from Women in Crypto Global. Real-world assets, stablecoin yield, and the financial infrastructure of digital ownership. Independent journalism for women building wealth in digital assets. Sundays in your inbox.">
+<meta name="keywords" content="tokenized newsletter, RWA newsletter, real world assets newsletter, stablecoin yield newsletter, women in crypto newsletter, digital assets newsletter, crypto newsletter for women, tokenization newsletter, conservative crypto investing, RWA report, tokenized real estate newsletter, crypto editorial">
+<meta name="author" content="Women in Crypto Global">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<link rel="canonical" href="https://tokenized.report">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tokenized.report">
+<meta property="og:title" content="Tokenized Report. The weekly editorial brief on digital ownership.">
+<meta property="og:description" content="Real-world assets. Stablecoin yield. Tokenization. From Women in Crypto Global. Sundays in your inbox.">
+<meta property="og:image" content="https://womenincryptoglobal.com/og-image.jpg">
+<meta property="og:site_name" content="Tokenized Report">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tokenized Report. The weekly editorial brief on digital ownership.">
+<meta name="twitter:description" content="Real-world assets. Stablecoin yield. From Women in Crypto Global. Sundays in your inbox.">
+<meta name="twitter:image" content="https://womenincryptoglobal.com/og-image.jpg">
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230a0a0a'/%3E%3Cline x1='20' y1='32' x2='80' y2='32' stroke='%23c9a961' stroke-width='3'/%3E%3Ctext x='50' y='63' font-family='Playfair Display, Georgia, serif' font-size='36' font-weight='900' fill='%23f5f0e8' text-anchor='middle' letter-spacing='-1.5'%3ET%3C/text%3E%3Cline x1='20' y1='68' x2='80' y2='68' stroke='%23c9a961' stroke-width='3'/%3E%3C/svg%3E">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Newsletter",
+  "name": "Tokenized Report",
+  "description": "The weekly editorial newsletter on real-world assets, stablecoin yield, and digital ownership from Women in Crypto Global.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Women in Crypto Global",
+    "url": "https://womenincryptoglobal.com",
+    "foundingDate": "2021"
+  },
+  "url": "https://tokenized.report",
+  "inLanguage": "en-US"
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --ink: #0a0a0a;
+  --ink-soft: #1a1a1a;
+  --paper: #faf7f2;
+  --paper-warm: #f5f0e8;
+  --paper-pure: #ffffff;
+  --gold: #c9a961;
+  --gold-deep: #a8884a;
+  --gold-light: #e8d8b3;
+  --rule: #e5e0d6;
+  --muted: #6b6660;
+  --text-body: #2a2620;
+
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+
+  --maxw: 760px;
+  --maxw-wide: 1280px;
+  --gutter: clamp(20px, 4vw, 48px);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-sans);
+  background: var(--paper);
+  color: var(--text-body);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+a { color: inherit; text-decoration: none; }
+
+/* HEADER */
+.site-header { background: var(--paper); padding: 24px 0 0; }
+.header-meta {
+  max-width: var(--maxw-wide);
+  margin: 0 auto 12px;
+  padding: 0 var(--gutter);
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+.masthead-wrap {
+  border-top: 2px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  position: relative;
+}
+.masthead-wrap::before {
+  content: '';
+  position: absolute;
+  top: 4px; left: 0; right: 0;
+  height: 1px;
+  background: var(--ink);
+}
+.masthead {
+  max-width: var(--maxw-wide);
+  margin: 0 auto;
+  padding: 32px var(--gutter) 26px;
+  text-align: center;
+  display: block;
+}
+.masthead-title {
+  font-family: var(--font-serif);
+  font-size: clamp(40px, 7vw, 78px);
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -2.5px;
+  color: var(--ink);
+  text-transform: uppercase;
+}
+.masthead-title em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--gold-deep);
+  text-transform: none;
+  letter-spacing: -1px;
+}
+.masthead-sub {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(16px, 2vw, 22px);
+  color: var(--ink);
+  letter-spacing: 1px;
+  margin-top: 6px;
+}
+
+/* TOP BAR (from + topics) */
+.top-bar {
+  background: var(--paper);
+  border-bottom: 1px solid var(--rule);
+}
+.top-bar-inner {
+  max-width: var(--maxw-wide);
+  margin: 0 auto;
+  padding: 14px var(--gutter);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.top-bar-from,
+.top-bar-topics {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.top-bar-from a {
+  color: var(--gold-deep);
+  border-bottom: 1px solid var(--gold);
+  padding-bottom: 1px;
+}
+
+/* HERO */
+.hero {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 64px var(--gutter) 48px;
+  text-align: center;
+}
+.hero-eyebrow {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  background: rgba(201,169,97,0.1);
+  padding: 8px 14px;
+  margin-bottom: 28px;
+}
+.hero-title {
+  font-family: var(--font-serif);
+  font-size: clamp(38px, 6vw, 72px);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -2px;
+  color: var(--ink);
+  margin-bottom: 28px;
+}
+.hero-title em { font-style: italic; color: var(--gold-deep); font-weight: 500; }
+.hero-deck {
+  font-family: var(--font-serif);
+  font-size: clamp(19px, 2.4vw, 24px);
+  line-height: 1.45;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--muted);
+  max-width: 620px;
+  margin: 0 auto 40px;
+}
+
+/* SIGNUP FORM */
+.signup-block {
+  max-width: 560px;
+  margin: 0 auto;
+  background: var(--paper-warm);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 36px 32px;
+  position: relative;
+}
+.signup-block::before,
+.signup-block::after {
+  content: '';
+  position: absolute;
+  left: 32px;
+  right: 32px;
+  height: 1px;
+  background: var(--gold);
+}
+.signup-block::before { top: 18px; }
+.signup-block::after { bottom: 18px; }
+.signup-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--ink);
+  text-align: center;
+  margin-bottom: 12px;
+}
+.signup-headline {
+  font-family: var(--font-serif);
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--ink);
+  text-align: center;
+  margin-bottom: 22px;
+}
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.signup-input {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  padding: 14px 16px;
+  border: 1px solid var(--ink);
+  background: var(--paper-pure);
+  color: var(--ink);
+  border-radius: 2px;
+  width: 100%;
+}
+.signup-input:focus {
+  outline: 2px solid var(--gold);
+  outline-offset: -1px;
+}
+.signup-btn {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  padding: 16px 20px;
+  background: var(--ink);
+  color: var(--paper);
+  border: none;
+  cursor: pointer;
+  transition: background 0.15s ease;
+  border-radius: 2px;
+}
+.signup-btn:hover { background: var(--gold-deep); }
+.signup-note {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 14px;
+  text-transform: uppercase;
+}
+
+/* SECTION RULE */
+.section-rule {
+  max-width: var(--maxw);
+  margin: 72px auto 0;
+  padding: 0 var(--gutter);
+}
+.section-rule-line {
+  height: 1px;
+  background: var(--ink);
+  margin-bottom: 16px;
+}
+.section-rule-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--ink);
+  text-align: center;
+}
+
+/* WHAT TO EXPECT */
+.expect-section {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 48px var(--gutter) 32px;
+}
+.expect-headline {
+  font-family: var(--font-serif);
+  font-size: clamp(30px, 4vw, 44px);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  color: var(--ink);
+  margin-bottom: 36px;
+  text-align: center;
+}
+.expect-headline em { font-style: italic; color: var(--gold-deep); }
+.expect-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+.expect-item {
+  border-top: 2px solid var(--ink);
+  padding-top: 20px;
+}
+.expect-item-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  margin-bottom: 12px;
+}
+.expect-item-title {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.25;
+  color: var(--ink);
+  margin-bottom: 10px;
+}
+.expect-item-desc {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--text-body);
+}
+
+/* WHO IT'S FOR */
+.audience-section {
+  background: var(--paper-warm);
+  padding: 72px 0;
+  margin-top: 72px;
+}
+.audience-inner {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+  text-align: center;
+}
+.audience-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  margin-bottom: 24px;
+}
+.audience-headline {
+  font-family: var(--font-serif);
+  font-size: clamp(30px, 4.5vw, 48px);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -1px;
+  color: var(--ink);
+  margin-bottom: 28px;
+}
+.audience-headline em { font-style: italic; color: var(--gold-deep); }
+.audience-text {
+  font-family: var(--font-serif);
+  font-size: 20px;
+  line-height: 1.6;
+  color: var(--text-body);
+  max-width: 620px;
+  margin: 0 auto 16px;
+}
+.audience-stat {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 1.8px;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-top: 24px;
+}
+
+/* STAT CALLOUT */
+.stat-callout {
+  max-width: var(--maxw);
+  margin: 64px auto;
+  padding: 0 var(--gutter);
+}
+.stat-callout-inner {
+  background: var(--paper-warm);
+  border-left: 4px solid var(--gold);
+  padding: 32px 36px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.stat-callout-number {
+  font-family: var(--font-serif);
+  font-size: clamp(56px, 9vw, 96px);
+  font-weight: 900;
+  line-height: 1;
+  color: var(--ink);
+  letter-spacing: -3px;
+  flex-shrink: 0;
+}
+.stat-callout-number em { font-style: italic; color: var(--gold-deep); font-size: 0.6em; font-weight: 400; }
+.stat-callout-text {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  line-height: 1.45;
+  color: var(--text-body);
+}
+.stat-callout-text strong { color: var(--ink); font-weight: 600; }
+.stat-callout-source {
+  display: block;
+  margin-top: 10px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* SAMPLE ISSUE PREVIEW */
+.sample-section {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 64px var(--gutter) 32px;
+}
+.sample-card {
+  background: var(--paper-pure);
+  border: 1px solid var(--rule);
+  padding: 0;
+  overflow: hidden;
+}
+.sample-header {
+  border-bottom: 2px solid var(--ink);
+  padding: 24px 28px;
+  background: var(--paper);
+}
+.sample-header-meta {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.sample-header-title {
+  font-family: var(--font-serif);
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: -1px;
+  color: var(--ink);
+  text-transform: uppercase;
+}
+.sample-header-sub {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 14px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+.sample-body {
+  padding: 28px;
+}
+.sample-section-block {
+  margin-bottom: 28px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--rule);
+}
+.sample-section-block:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.sample-section-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  margin-bottom: 8px;
+}
+.sample-section-title {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+.sample-section-text {
+  font-family: var(--font-serif);
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--text-body);
+}
+.sample-section-text em { color: var(--gold-deep); font-weight: 500; }
+
+/* SECONDARY CTA */
+.cta-section {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 48px var(--gutter) 96px;
+  text-align: center;
+}
+.cta-headline {
+  font-family: var(--font-serif);
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -1px;
+  color: var(--ink);
+  margin-bottom: 16px;
+}
+.cta-headline em { font-style: italic; color: var(--gold-deep); }
+.cta-text {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--muted);
+  max-width: 520px;
+  margin: 0 auto 32px;
+}
+
+/* FOOTER */
+.site-footer {
+  background: var(--ink);
+  color: var(--paper);
+  padding: 56px 0 32px;
+}
+.footer-inner {
+  max-width: var(--maxw-wide);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+  text-align: center;
+}
+.footer-title {
+  font-family: var(--font-serif);
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+.footer-sub {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 14px;
+  color: var(--gold-light);
+  margin-bottom: 32px;
+}
+.footer-rule {
+  width: 80px;
+  height: 1px;
+  background: var(--gold);
+  margin: 0 auto 32px;
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+.footer-links a {
+  color: var(--paper);
+  opacity: 0.85;
+  transition: opacity 0.15s;
+}
+.footer-links a:hover { opacity: 1; color: var(--gold-light); }
+.footer-meta {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: var(--muted);
+  text-transform: uppercase;
+  line-height: 1.8;
+}
+.footer-meta a { color: var(--gold-light); }
+
+/* MOBILE */
+@media (max-width: 720px) {
+  .expect-grid { grid-template-columns: 1fr; gap: 28px; }
+  .stat-callout-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+    padding: 28px 24px;
+  }
+  .signup-block { padding: 32px 24px; }
+  .sample-body { padding: 24px 20px; }
+  .sample-header { padding: 20px 22px; }
+  .sample-header-title { font-size: 26px; }
+}
+
+@media (max-width: 480px) {
+  .top-bar-inner { justify-content: center; }
+  .top-bar-topics { display: none; }
+  .footer-links { gap: 18px; }
+  .footer-links a { font-size: 10px; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-meta">VOL. I · ISSUE 001 · SUNDAYS</div>
+  <div class="masthead-wrap">
+    <a href="/" class="masthead">
+      <div class="masthead-title">Tokenized<em> Report</em></div>
+      <div class="masthead-sub">The weekly editorial brief on digital ownership.</div>
+    </a>
+  </div>
+</header>
+
+<div class="top-bar">
+  <div class="top-bar-inner">
+    <div class="top-bar-from">From <a href="https://womenincryptoglobal.com" target="_blank" rel="noopener">Women in Crypto Global</a></div>
+    <div class="top-bar-topics">RWA · STABLECOIN YIELD · TOKENIZATION</div>
+  </div>
+</div>
+
+<section class="hero">
+  <div class="hero-eyebrow">Independent. Editorial. Sunday Mornings.</div>
+  <h1 class="hero-title">The crypto newsletter for women who are <em>not</em> here for the noise.</h1>
+  <p class="hero-deck">Real-world assets. Stablecoin yield. Tokenized real estate. The financial infrastructure being built on-chain, written for the 44% of new US wallet holders the rest of the industry forgot to write for.</p>
+
+  <div class="signup-block" id="subscribe">
+    <div class="signup-label">Subscribe Free</div>
+    <h2 class="signup-headline">Get Tokenized Report every Sunday.</h2>
+    <form class="signup-form" action="#" method="post" id="subscribe-form" novalidate>
+      <input type="email" name="email" class="signup-input" placeholder="your@email.com" required aria-label="Email address">
+      <button type="submit" class="signup-btn">Subscribe</button>
+    </form>
+    <div class="signup-note">No spam. Unsubscribe anytime.</div>
+  </div>
+</section>
+
+<div class="section-rule">
+  <div class="section-rule-line"></div>
+  <div class="section-rule-label">What's Inside Every Issue</div>
+</div>
+
+<section class="expect-section">
+  <h2 class="expect-headline">A complete Sunday brief on the parts of crypto that actually <em>build wealth</em>.</h2>
+  <div class="expect-grid">
+    <div class="expect-item">
+      <div class="expect-item-label">The Lead</div>
+      <h3 class="expect-item-title">One deep editorial piece on what mattered this week.</h3>
+      <p class="expect-item-desc">RWA tokenization. Stablecoin yield strategies. Regulatory shifts. Real estate on-chain. We pick the one story worth your attention and analyze it without hype.</p>
+    </div>
+    <div class="expect-item">
+      <div class="expect-item-label">The Numbers</div>
+      <h3 class="expect-item-title">Five data points worth knowing this week.</h3>
+      <p class="expect-item-desc">Tokenized treasury yields. Stablecoin float. RWA market cap. Regulatory developments. One sentence each. Cited sources. No padding.</p>
+    </div>
+    <div class="expect-item">
+      <div class="expect-item-label">The Primer</div>
+      <h3 class="expect-item-title">One concept, fully explained, in 200 words.</h3>
+      <p class="expect-item-desc">Every week we define one term showing up in industry conversation. No jargon assumed. No talking down. Just the clearest possible explanation.</p>
+    </div>
+    <div class="expect-item">
+      <div class="expect-item-label">Worth Reading</div>
+      <h3 class="expect-item-title">Three outside links curated for your time.</h3>
+      <p class="expect-item-desc">The best journalism from the rest of the industry this week. Edited, contextualized, and explained so you know why each piece matters before you click.</p>
+    </div>
+  </div>
+</section>
+
+<div class="stat-callout">
+  <div class="stat-callout-inner">
+    <div class="stat-callout-number">44<em>%</em></div>
+    <div>
+      <div class="stat-callout-text"><strong>Of new US crypto wallets in 2026 are owned by women.</strong> The largest cohort is women aged 45 to 59. They are not chasing memecoins. They are researching tokenized treasuries, stablecoin yield, and real estate on-chain. Tokenized Report is the publication written for them.</div>
+      <span class="stat-callout-source">Source: Coinlaw / Security.org 2026 Demographic Data</span>
+    </div>
+  </div>
+</div>
+
+<section class="audience-section">
+  <div class="audience-inner">
+    <div class="audience-eyebrow">Who This Is For</div>
+    <h2 class="audience-headline">Written for women who want serious journalism, <em>not encouraging words</em>.</h2>
+    <p class="audience-text">If you are a woman in finance, an advisor with clients asking about digital assets, a founder in this space, or a professional building wealth thoughtfully and tired of being patronized by the rest of crypto media, Tokenized Report is the publication you have been looking for.</p>
+    <p class="audience-text">No price predictions. No shilling. No bro energy. Just editorial standards from legacy financial journalism applied to the most consequential financial infrastructure being built this decade.</p>
+    <div class="audience-stat">Published Sundays · Free · Independent</div>
+  </div>
+</section>
+
+<div class="section-rule">
+  <div class="section-rule-line"></div>
+  <div class="section-rule-label">A Look At The Format</div>
+</div>
+
+<section class="sample-section">
+  <div class="sample-card">
+    <div class="sample-header">
+      <div class="sample-header-meta">
+        <span>VOL. I · ISSUE 001</span>
+        <span>SAMPLE FORMAT</span>
+      </div>
+      <div class="sample-header-title">Tokenized Report</div>
+      <div class="sample-header-sub">The weekly editorial brief on digital ownership.</div>
+    </div>
+    <div class="sample-body">
+      <div class="sample-section-block">
+        <div class="sample-section-label">From The Editor</div>
+        <div class="sample-section-title">A 250-word note from Julie on what changed this week.</div>
+        <div class="sample-section-text">Why this issue's lead story matters, what to watch for, and how to think about the week ahead. Personal voice. Editorial framing. Sets the table.</div>
+      </div>
+      <div class="sample-section-block">
+        <div class="sample-section-label">The Lead</div>
+        <div class="sample-section-title">One 400-word essay on the most important story in RWA, yield, or tokenization.</div>
+        <div class="sample-section-text">We pick one story. We go deep. We name what the rest of the industry is missing. No takes you have already seen on Twitter.</div>
+      </div>
+      <div class="sample-section-block">
+        <div class="sample-section-label">The Numbers</div>
+        <div class="sample-section-title">Five data points worth your attention, one sentence each.</div>
+        <div class="sample-section-text"><em>Example:</em> Tokenized US Treasuries crossed $13 billion in on-chain value this month, up from $2 billion at the start of 2025. (Source: rwa.xyz)</div>
+      </div>
+      <div class="sample-section-block">
+        <div class="sample-section-label">The Primer</div>
+        <div class="sample-section-title">One concept, fully explained.</div>
+        <div class="sample-section-text">This week's term defined. The context behind it. Links to the cornerstone guide if you want to go deeper.</div>
+      </div>
+      <div class="sample-section-block">
+        <div class="sample-section-label">Worth Reading</div>
+        <div class="sample-section-title">Three outside links, edited for your time.</div>
+        <div class="sample-section-text">The week's best journalism from elsewhere. One sentence on why each piece earned its place.</div>
+      </div>
+      <div class="sample-section-block">
+        <div class="sample-section-label">From The Learn Hub</div>
+        <div class="sample-section-title">One evergreen guide from Women in Crypto Global worth bookmarking.</div>
+        <div class="sample-section-text">Tokenized real estate. Stablecoin yield ranked. Crypto taxes 2026. Always one. Always relevant.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <h2 class="cta-headline">Sundays just got <em>more useful</em>.</h2>
+  <p class="cta-text">Join the women, founders, advisors, and operators reading Tokenized Report every weekend.</p>
+  <a href="#subscribe" class="signup-btn" style="display:inline-block; text-decoration:none;">Subscribe Free</a>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-title">Tokenized Report</div>
+    <div class="footer-sub">From Women in Crypto Global.</div>
+    <div class="footer-rule"></div>
+    <div class="footer-links">
+      <a href="https://womenincryptoglobal.com">The Publication</a>
+      <a href="https://womenincryptoglobal.com/learn.html">Learn Hub</a>
+      <a href="https://womenincryptoglobal.com/our-mission.html">Our Mission</a>
+      <a href="https://womenincryptoglobal.com/partner-with-us.html">Partner With Us</a>
+      <a href="https://womenincryptoglobal.com/contact.html">Contact</a>
+    </div>
+    <div class="footer-meta">
+      © 2026 Women in Crypto Global · All rights reserved<br>
+      Editorial &amp; partnerships: <a href="mailto:hello@womenincryptoglobal.com">hello@womenincryptoglobal.com</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Placeholder form handler. Replace with Beehiiv embed code once the platform is set up.
+document.getElementById('subscribe-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const email = this.querySelector('input[name="email"]').value;
+  if (!email) return;
+  // TODO: Replace this with actual Beehiiv form action or embed
+  alert('Thank you. Once Beehiiv is connected, ' + email + ' will be subscribed. For now, please save this email and add manually until the integration is live.');
+});
+</script>
+
+</body>
+</html>
