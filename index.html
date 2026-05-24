@@ -211,7 +211,7 @@ a { color: inherit; text-decoration: none; }
   margin: 0 auto 40px;
 }
 
-/* SIGNUP FORM */
+/* SIGNUP BLOCK (Beehiiv embed container) */
 .signup-block {
   max-width: 560px;
   margin: 0 auto;
@@ -251,40 +251,6 @@ a { color: inherit; text-decoration: none; }
   text-align: center;
   margin-bottom: 22px;
 }
-.signup-form {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-.signup-input {
-  font-family: var(--font-sans);
-  font-size: 16px;
-  padding: 14px 16px;
-  border: 1px solid var(--ink);
-  background: var(--paper-pure);
-  color: var(--ink);
-  border-radius: 2px;
-  width: 100%;
-}
-.signup-input:focus {
-  outline: 2px solid var(--gold);
-  outline-offset: -1px;
-}
-.signup-btn {
-  font-family: var(--font-mono);
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 2.5px;
-  text-transform: uppercase;
-  padding: 16px 20px;
-  background: var(--ink);
-  color: var(--paper);
-  border: none;
-  cursor: pointer;
-  transition: background 0.15s ease;
-  border-radius: 2px;
-}
-.signup-btn:hover { background: var(--gold-deep); }
 .signup-note {
   font-family: var(--font-mono);
   font-size: 10px;
@@ -294,6 +260,25 @@ a { color: inherit; text-decoration: none; }
   margin-top: 14px;
   text-transform: uppercase;
 }
+
+/* CTA Subscribe Button (for the secondary CTA link) */
+.cta-subscribe-btn {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  padding: 16px 32px;
+  background: var(--ink);
+  color: var(--paper);
+  border: none;
+  cursor: pointer;
+  transition: background 0.15s ease;
+  border-radius: 2px;
+  display: inline-block;
+  text-decoration: none;
+}
+.cta-subscribe-btn:hover { background: var(--gold-deep); }
 
 /* SECTION RULE */
 .section-rule {
@@ -675,10 +660,8 @@ a { color: inherit; text-decoration: none; }
   <div class="signup-block" id="subscribe">
     <div class="signup-label">Subscribe Free</div>
     <h2 class="signup-headline">Get Tokenized Report every Sunday.</h2>
-    <form class="signup-form" action="#" method="post" id="subscribe-form" novalidate>
-      <input type="email" name="email" class="signup-input" placeholder="your@email.com" required aria-label="Email address">
-      <button type="submit" class="signup-btn">Subscribe</button>
-    </form>
+    <!-- Beehiiv embed: Newsletter Signup form -->
+    <script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="11e6369a-bdb1-4046-baf9-c135aa93a6a4"></script>
     <div class="signup-note">No spam. Unsubscribe anytime.</div>
   </div>
 </section>
@@ -787,7 +770,7 @@ a { color: inherit; text-decoration: none; }
 <section class="cta-section">
   <h2 class="cta-headline">Sundays just got <em>more useful</em>.</h2>
   <p class="cta-text">Join the women, founders, advisors, and operators reading Tokenized Report every weekend.</p>
-  <a href="#subscribe" class="signup-btn" style="display:inline-block; text-decoration:none;">Subscribe Free</a>
+  <a href="#subscribe" class="cta-subscribe-btn">Subscribe Free</a>
 </section>
 
 <footer class="site-footer">
@@ -808,17 +791,6 @@ a { color: inherit; text-decoration: none; }
     </div>
   </div>
 </footer>
-
-<script>
-// Placeholder form handler. Replace with Beehiiv embed code once the platform is set up.
-document.getElementById('subscribe-form').addEventListener('submit', function(e) {
-  e.preventDefault();
-  const email = this.querySelector('input[name="email"]').value;
-  if (!email) return;
-  // TODO: Replace this with actual Beehiiv form action or embed
-  alert('Thank you. Once Beehiiv is connected, ' + email + ' will be subscribed. For now, please save this email and add manually until the integration is live.');
-});
-</script>
 
 </body>
 </html>
