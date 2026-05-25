@@ -1,1 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-53GYPXBTZ7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-53GYPXBTZ7");
+  gtag("event", "page_not_found", { event_category: "404", event_label: window.location.pathname });
+</script>
+
+<title>Page Not Found | Tokenized Report</title>
+<meta name="robots" content="noindex, follow">
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230a0a0a'/%3E%3Cline x1='20' y1='32' x2='80' y2='32' stroke='%23c9a961' stroke-width='3'/%3E%3Ctext x='50' y='63' font-family='Playfair Display, Georgia, serif' font-size='36' font-weight='900' fill='%23f5f0e8' text-anchor='middle' letter-spacing='-1.5'%3ET%3C/text%3E%3Cline x1='20' y1='68' x2='80' y2='68' stroke='%23c9a961' stroke-width='3'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --ink: #0a0a0a;
+  --paper: #faf7f2;
+  --paper-warm: #f5f0e8;
+  --gold: #c9a961;
+  --gold-deep: #a8884a;
+  --gold-light: #e8d8b3;
+  --rule: #e5e0d6;
+  --muted: #6b6660;
+  --text-body: #2a2620;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+  --maxw-wide: 1280px;
+  --gutter: clamp(20px, 4vw, 48px);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: var(--font-sans);
+  background: var(--paper);
+  color: var(--text-body);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+a { color: inherit; text-decoration: none; }
+
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
+
+.site-header { background: var(--paper); padding: 24px 0 0; }
+.masthead-wrap {
+  border-top: 2px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  position: relative;
+}
+.masthead-wrap::before {
+  content: ''; position: absolute; top: 4px; left: 0; right: 0;
+  height: 1px; background: var(--ink);
+}
+.masthead {
+  max-width: var(--maxw-wide); margin: 0 auto;
+  padding: 32px var(--gutter) 26px;
+  text-align: center; display: block;
+}
+.masthead-title {
+  font-family: var(--font-serif);
+  font-size: clamp(40px, 7vw, 78px);
+  font-weight: 900; line-height: 0.95;
+  letter-spacing: -2.5px; color: var(--ink);
+  text-transform: uppercase;
+}
+.masthead-title em {
+  font-style: italic; font-weight: 400; color: var(--gold-deep);
+  text-transform: none; letter-spacing: -1px;
+}
+.masthead-sub {
+  font-family: var(--font-serif);
+  font-style: italic; font-weight: 400;
+  font-size: clamp(16px, 2vw, 22px);
+  color: var(--ink); letter-spacing: 1px; margin-top: 6px;
+}
+
+.main-nav { background: var(--paper); border-bottom: 1px solid var(--ink); }
+.main-nav-inner {
+  max-width: var(--maxw-wide); margin: 0 auto;
+  padding: 16px var(--gutter);
+  display: flex; justify-content: space-between;
+  align-items: center; flex-wrap: wrap; gap: 16px;
+}
+.main-nav-links { display: flex; gap: 28px; list-style: none; }
+.main-nav-links a {
+  font-family: var(--font-mono);
+  font-size: 11px; font-weight: 700;
+  letter-spacing: 2.5px; text-transform: uppercase;
+  color: var(--ink); padding: 6px 0;
+}
+.main-nav-cta {
+  font-family: var(--font-mono);
+  font-size: 11px; font-weight: 700;
+  letter-spacing: 2.5px; text-transform: uppercase;
+  padding: 10px 22px;
+  background: var(--ink); color: var(--paper);
+  border-radius: 2px;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+  text-align: center;
+}
+.error-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  margin-bottom: 16px;
+}
+.error-number {
+  font-family: var(--font-serif);
+  font-size: clamp(80px, 16vw, 140px);
+  font-weight: 900;
+  color: var(--ink);
+  line-height: 1;
+  letter-spacing: -4px;
+  margin-bottom: 12px;
+}
+.error-number em {
+  font-style: italic;
+  color: var(--gold-deep);
+  font-weight: 400;
+}
+.error-title {
+  font-family: var(--font-serif);
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--ink);
+  margin-bottom: 20px;
+  max-width: 600px;
+  padding: 0 var(--gutter);
+}
+.error-title em { font-style: italic; color: var(--gold-deep); }
+.error-message {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 18px;
+  color: var(--muted);
+  margin-bottom: 36px;
+  max-width: 540px;
+  padding: 0 var(--gutter);
+  line-height: 1.55;
+}
+.error-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 var(--gutter);
+}
+a.btn {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  padding: 16px 28px;
+  border-radius: 2px;
+  transition: background 0.15s, color 0.15s;
+}
+a.btn.primary {
+  background: var(--ink);
+  color: var(--paper);
+}
+a.btn.primary:hover { background: var(--gold-deep); }
+a.btn.secondary {
+  background: transparent;
+  color: var(--ink);
+  border: 2px solid var(--ink);
+  padding: 14px 26px;
+}
+a.btn.secondary:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.site-footer {
+  background: var(--ink);
+  color: var(--paper);
+  padding: 32px 0 24px;
+  text-align: center;
+}
+.footer-inner {
+  max-width: var(--maxw-wide);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+.footer-meta {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+  main { padding: 40px 0; }
+  .main-nav-inner { flex-direction: column; align-items: center; gap: 12px; }
+  .main-nav-links { gap: 16px; }
+  .main-nav-links a { font-size: 10px; letter-spacing: 1.8px; }
+  .main-nav-cta { padding: 9px 16px; font-size: 10px; letter-spacing: 1.8px; }
+  .error-actions { flex-direction: column; width: 100%; }
+  a.btn { width: 100%; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="masthead-wrap">
+    <a href="/" class="masthead">
+      <div class="masthead-title">Tokenized<em> Report</em></div>
+      <div class="masthead-sub">The weekly editorial brief on digital ownership.</div>
+    </a>
+  </div>
+</header>
+
+<nav class="main-nav" aria-label="Primary">
+  <div class="main-nav-inner">
+    <ul class="main-nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/library/">Library</a></li>
+      <li><a href="https://tokenizedreport.beehiiv.com/" target="_blank" rel="noopener">Archive<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    <a href="/#subscribe" class="main-nav-cta">Subscribe</a>
+  </div>
+</nav>
+
+<main>
+  <div>
+    <div class="error-eyebrow">404 · Page Not Found</div>
+    <div class="error-number">4<em>0</em>4</div>
+    <h1 class="error-title">This page isn't <em>where you left it</em>.</h1>
+    <p class="error-message">The link may have moved, the URL may have been mistyped, or this issue may not exist yet. Try the Library for our published guides, or head home.</p>
+    <div class="error-actions">
+      <a href="/" class="btn primary">Back to home</a>
+      <a href="/library/" class="btn secondary">Browse the library</a>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-meta">© 2026 Women in Crypto Global · Phoenix, AZ</div>
+  </div>
+</footer>
+
+</body>
+</html>
