@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Library · Tokenized Report</title>
+<meta name="description" content="Free editorial guides on tokenization, real-world assets, and stablecoin yield. Published by Tokenized Report.">
+<meta name="author" content="Julie James, Tokenized Report">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Tokenized Report Library">
+<meta property="og:description" content="Free editorial guides on tokenization, real-world assets, and stablecoin yield.">
+<meta property="og:site_name" content="Tokenized Report">
+<meta property="og:url" content="https://tokenized.report/library">
+
+<!-- GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-53GYPXBTZ7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-53GYPXBTZ7');
+</script>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --ink: #0a0a0a;
+    --paper: #faf7f2;
+    --gold: #c9a961;
+    --gold-deep: #a68647;
+    --muted-ink: #555555;
+    --subtle-line: #d4cdbf;
+    --light-gold: #f3ead4;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .container {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* Masthead */
+  header.masthead {
+    border-bottom: 1px solid var(--subtle-line);
+    padding: 28px 0 24px;
+    text-align: center;
+  }
+
+  .masthead a {
+    text-decoration: none;
+    color: var(--ink);
+    display: inline-block;
+  }
+
+  .masthead-wordmark {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+  }
+
+  .masthead-wordmark .report {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--gold-deep);
+    margin-left: 4px;
+  }
+
+  .masthead-tagline {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-top: 8px;
+  }
+
+  /* Subnav */
+  nav.subnav {
+    border-bottom: 1px solid var(--subtle-line);
+    padding: 12px 0;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--muted-ink);
+  }
+
+  nav.subnav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav.subnav a {
+    color: var(--muted-ink);
+    text-decoration: none;
+    margin-left: 20px;
+  }
+
+  nav.subnav a:hover { color: var(--gold-deep); }
+
+  nav.subnav .breadcrumb a:first-child { margin-left: 0; }
+
+  /* Hero */
+  .hero {
+    padding: 72px 0 48px;
+    text-align: center;
+    border-bottom: 1px solid var(--subtle-line);
+  }
+
+  .hero-eyebrow {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+
+  .hero-eyebrow::before,
+  .hero-eyebrow::after {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 1px;
+    background: var(--gold);
+    vertical-align: middle;
+    margin: 0 12px;
+  }
+
+  h1.hero-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(44px, 7vw, 64px);
+    line-height: 1.05;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+  }
+
+  .hero-subtitle {
+    font-size: 18px;
+    line-height: 1.55;
+    color: var(--muted-ink);
+    max-width: 620px;
+    margin: 0 auto;
+    font-weight: 300;
+  }
+
+  /* Library section */
+  .library-section {
+    padding: 64px 0;
+  }
+
+  .section-label {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .section-heading {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 56px;
+  }
+
+  /* Cheatsheet entries */
+  .cheatsheet-entry {
+    padding: 40px 0;
+    border-bottom: 1px solid var(--subtle-line);
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 36px;
+    align-items: start;
+  }
+
+  .cheatsheet-entry:last-child {
+    border-bottom: none;
+  }
+
+  .cheatsheet-number {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 60px;
+    line-height: 0.9;
+    color: var(--gold);
+    font-weight: 400;
+    letter-spacing: -2px;
+  }
+
+  .cheatsheet-meta {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: var(--muted-ink);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+
+  .cheatsheet-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+
+  .cheatsheet-title a {
+    color: var(--ink);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .cheatsheet-title a:hover {
+    color: var(--gold-deep);
+  }
+
+  .cheatsheet-description {
+    font-size: 15.5px;
+    line-height: 1.65;
+    color: var(--ink);
+    margin-bottom: 16px;
+  }
+
+  .cheatsheet-stats {
+    font-size: 12px;
+    color: var(--muted-ink);
+    margin-bottom: 18px;
+    letter-spacing: 0.3px;
+  }
+
+  .cheatsheet-stats span {
+    margin-right: 14px;
+  }
+
+  .cheatsheet-link {
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--ink);
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 1px solid var(--gold);
+    padding-bottom: 2px;
+    transition: all 0.2s ease;
+  }
+
+  .cheatsheet-link:hover {
+    color: var(--gold-deep);
+    border-bottom-color: var(--gold-deep);
+  }
+
+  .cheatsheet-link::after {
+    content: " →";
+    font-size: 14px;
+  }
+
+  /* Coming soon state */
+  .cheatsheet-entry.coming-soon {
+    opacity: 0.55;
+  }
+
+  .cheatsheet-entry.coming-soon .cheatsheet-title a {
+    cursor: default;
+    pointer-events: none;
+  }
+
+  .cheatsheet-entry.coming-soon .cheatsheet-link {
+    color: var(--muted-ink);
+    border-bottom-color: var(--subtle-line);
+    cursor: default;
+    pointer-events: none;
+  }
+
+  .cheatsheet-entry.coming-soon .cheatsheet-link::after {
+    content: "";
+  }
+
+  /* Subscribe block */
+  .subscribe-block {
+    background: var(--light-gold);
+    padding: 64px 24px;
+    text-align: center;
+    margin-top: 24px;
+  }
+
+  .subscribe-block .container {
+    max-width: 540px;
+  }
+
+  .subscribe-eyebrow {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: var(--gold-deep);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+
+  .subscribe-heading {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 32px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+
+  .subscribe-description {
+    font-size: 16px;
+    color: var(--muted-ink);
+    margin-bottom: 28px;
+    line-height: 1.6;
+  }
+
+  #beehiiv-embed {
+    max-width: 460px;
+    margin: 0 auto;
+  }
+
+  /* Footer */
+  footer {
+    border-top: 1px solid var(--subtle-line);
+    padding: 40px 0 32px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--muted-ink);
+  }
+
+  footer a {
+    color: var(--muted-ink);
+    text-decoration: none;
+    margin: 0 12px;
+  }
+
+  footer a:hover { color: var(--gold-deep); }
+
+  footer .footer-mark {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: var(--ink);
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    .hero { padding: 48px 0 32px; }
+    .library-section { padding: 40px 0; }
+    .section-heading { font-size: 24px; margin-bottom: 36px; }
+
+    .cheatsheet-entry {
+      grid-template-columns: 1fr;
+      gap: 12px;
+      padding: 32px 0;
+    }
+
+    .cheatsheet-number {
+      font-size: 36px;
+    }
+
+    .cheatsheet-title { font-size: 22px; }
+
+    nav.subnav { font-size: 10px; }
+    nav.subnav a { margin-left: 12px; }
+
+    .subscribe-block { padding: 48px 16px; }
+    .subscribe-heading { font-size: 26px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Masthead -->
+<header class="masthead">
+  <div class="container">
+    <a href="/">
+      <div class="masthead-wordmark">TOKENIZED<span class="report">Report</span></div>
+      <div class="masthead-tagline">INDEPENDENT · EDITORIAL · SUNDAY MORNINGS</div>
+    </a>
+  </div>
+</header>
+
+<!-- Subnav -->
+<nav class="subnav">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="/">Home</a>
+      <span style="margin-left: 20px;">Library</span>
+    </div>
+    <div>
+      <a href="/#subscribe">Subscribe</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-eyebrow">The Library</div>
+    <h1 class="hero-title">Field guides for the<br>new financial infrastructure.</h1>
+    <p class="hero-subtitle">
+      Free editorial cheatsheets on tokenization, real-world assets, stablecoin yield, and on-chain finance. Built for people who want frameworks, not hype.
+    </p>
+  </div>
+</section>
+
+<!-- Library entries -->
+<section class="library-section">
+  <div class="container">
+
+    <div class="section-label">Available Now</div>
+    <h2 class="section-heading">The catalog.</h2>
+
+    <!-- ENTRY 01 -->
+    <div class="cheatsheet-entry">
+      <div class="cheatsheet-number">01</div>
+      <div>
+        <div class="cheatsheet-meta">A FIELD GUIDE · MAY 2026</div>
+        <h3 class="cheatsheet-title"><a href="/library/vetting-checklist/">The Tokenized Asset Vetting Checklist</a></h3>
+        <p class="cheatsheet-description">
+          Ten questions any investor should be able to answer before putting money into a tokenized offering. Covers issuer structure, custody, proof of reserves, smart contract audits, bankruptcy remoteness, and seven other tests. If the issuer cannot answer them, that is itself the answer.
+        </p>
+        <div class="cheatsheet-stats">
+          <span>7 pages</span>
+          <span>PDF</span>
+          <span>No email required</span>
+        </div>
+        <a href="/library/vetting-checklist/" class="cheatsheet-link">Read &amp; download</a>
+      </div>
+    </div>
+
+    <!-- ENTRY 02 -->
+    <div class="cheatsheet-entry">
+      <div class="cheatsheet-number">02</div>
+      <div>
+        <div class="cheatsheet-meta">A FIELD GUIDE · MAY 2026</div>
+        <h3 class="cheatsheet-title"><a href="/library/red-flag-phrases/">Five Phrases That Should Make You Walk Away</a></h3>
+        <p class="cheatsheet-description">
+          The language tokenization sellers use to dress up risk and dodge regulation. Each phrase explained with the technical or regulatory reason it is a warning, plus the specific question to ask that reveals whether the offering is what the marketing implies.
+        </p>
+        <div class="cheatsheet-stats">
+          <span>6 pages</span>
+          <span>PDF</span>
+          <span>No email required</span>
+        </div>
+        <a href="/library/red-flag-phrases/" class="cheatsheet-link">Read &amp; download</a>
+      </div>
+    </div>
+
+    <!-- ENTRY 03 -->
+    <div class="cheatsheet-entry">
+      <div class="cheatsheet-number">03</div>
+      <div>
+        <div class="cheatsheet-meta">A REFERENCE GUIDE · MAY 2026</div>
+        <h3 class="cheatsheet-title"><a href="/library/glossary/">The Tokenization Glossary</a></h3>
+        <p class="cheatsheet-description">
+          Plain-English definitions of the 25 terms that show up most often in tokenization marketing, offering documents, and regulatory text. Every term defined twice: once in industry language, once the way a friend who knows the space would explain it over coffee.
+        </p>
+        <div class="cheatsheet-stats">
+          <span>10 pages</span>
+          <span>PDF</span>
+          <span>No email required</span>
+        </div>
+        <a href="/library/glossary/" class="cheatsheet-link">Read &amp; download</a>
+      </div>
+    </div>
+
+    <!-- ENTRY 04 -->
+    <div class="cheatsheet-entry">
+      <div class="cheatsheet-number">04</div>
+      <div>
+        <div class="cheatsheet-meta">A REFERENCE GUIDE · MAY 2026</div>
+        <h3 class="cheatsheet-title"><a href="/library/chains/">Where Your Tokenized Assets Actually Live</a></h3>
+        <p class="cheatsheet-description">
+          A field guide to the blockchains hosting real-world assets in 2026, what each one is best for, the institutional adoption profile of each, and which ones should make you pause regardless of how clean the offering looks. Ethereum, Solana, Stellar, Avalanche, the L2s, and the reputational red flags.
+        </p>
+        <div class="cheatsheet-stats">
+          <span>8 pages</span>
+          <span>PDF</span>
+          <span>No email required</span>
+        </div>
+        <a href="/library/chains/" class="cheatsheet-link">Read &amp; download</a>
+      </div>
+    </div>
+
+    <!-- ENTRY 05 -->
+    <div class="cheatsheet-entry">
+      <div class="cheatsheet-number">05</div>
+      <div>
+        <div class="cheatsheet-meta">QUARTERLY DATA BRIEF · Q1 2026</div>
+        <h3 class="cheatsheet-title"><a href="/library/q1-2026-numbers/">The Five Most Important RWA Numbers</a></h3>
+        <p class="cheatsheet-description">
+          Five numbers that define the tokenized real-world asset market in Q1 2026, with sources, context, and what each one signals about what comes next. Pulled from primary sources: CoinGecko, RWA.xyz, Chainalysis, The Block, Grayscale Research, and individual issuer disclosures.
+        </p>
+        <div class="cheatsheet-stats">
+          <span>7 pages</span>
+          <span>PDF</span>
+          <span>No email required</span>
+        </div>
+        <a href="/library/q1-2026-numbers/" class="cheatsheet-link">Read &amp; download</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Subscribe block -->
+<section class="subscribe-block">
+  <div class="container">
+    <div class="subscribe-eyebrow">The Weekly Brief</div>
+    <h2 class="subscribe-heading">Get the next field guide in your inbox.</h2>
+    <p class="subscribe-description">
+      Tokenized Report publishes Sunday mornings. Three stories, one chart, one tactic. Built for people who don't have time for crypto Twitter.
+    </p>
+    <div id="beehiiv-embed">
+      <iframe src="https://embeds.beehiiv.com/11e6369a-bdb1-4046-baf9-c135aa93a6a4" data-test-id="beehiiv-embed" width="100%" height="64" frameborder="0" scrolling="no" style="border-radius: 4px; background: transparent;"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="footer-mark">Tokenized <em>Report</em></div>
+    <div>
+      <a href="/">Home</a>
+      <a href="/library">Library</a>
+      <a href="/#subscribe">Subscribe</a>
+      <a href="https://womenincryptoglobal.com">Women in Crypto Global</a>
+    </div>
+    <div style="margin-top: 16px; font-size: 11px; color: var(--muted-ink);">
+      © 2026 Women in Crypto Global · Phoenix, AZ · No investment advice. Educational use only.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
