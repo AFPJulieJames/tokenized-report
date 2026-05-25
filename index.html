@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Google tag (gtag.js) -->
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-53GYPXBTZ7"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -12,7 +12,6 @@
   gtag("config", "G-53GYPXBTZ7");
 </script>
 
-<!-- SEO META -->
 <title>Tokenized Report | The Weekly Editorial Brief on Digital Ownership</title>
 <meta name="description" content="Tokenized Report is the weekly editorial newsletter from Women in Crypto Global. Real-world assets, stablecoin yield, and the financial infrastructure of digital ownership. Independent journalism for women building wealth in digital assets. Sundays in your inbox.">
 <meta name="keywords" content="tokenized newsletter, RWA newsletter, real world assets newsletter, stablecoin yield newsletter, women in crypto newsletter, digital assets newsletter, crypto newsletter for women, tokenization newsletter, conservative crypto investing, RWA report, tokenized real estate newsletter, crypto editorial">
@@ -51,6 +50,55 @@
 }
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Tokenized Report?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tokenized Report is a weekly editorial newsletter covering real-world asset tokenization, stablecoin yield, and on-chain financial infrastructure. It is published by Women in Crypto Global and written for readers who want serious financial journalism applied to the crypto sector, without the hype or speculation that dominates most crypto media."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who is Tokenized Report for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tokenized Report is built for women 45 and older who hold the largest share of new US crypto wallets in 2026, for financial advisors fielding client questions about tokenized assets, for journalists covering the space, and for any reader who wants to understand the financial infrastructure being built on-chain without learning to read smart contract code."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often does Tokenized Report publish?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tokenized Report publishes weekly on Sunday mornings. Each issue follows a consistent format: three stories, one chart, and one tactical takeaway, designed to be read in seven to ten minutes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Tokenized Report cost anything?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The weekly newsletter is free. All editorial guides in the Tokenized Report Library are also free with no email required. A paid tier with extended analysis, premium guides, and direct access to the editor will launch later in 2026."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who writes Tokenized Report?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tokenized Report is edited by Julie James, founder of Women in Crypto Global. Julie launched WICG in 2021 and rebuilt it as an editorial publication in 2026 to serve the audience traditional crypto media has overlooked."
+      }
+    }
+  ]
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -68,11 +116,9 @@
   --rule: #e5e0d6;
   --muted: #6b6660;
   --text-body: #2a2620;
-
   --font-serif: 'Playfair Display', Georgia, serif;
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: 'JetBrains Mono', 'Courier New', monospace;
-
   --maxw: 760px;
   --maxw-wide: 1280px;
   --gutter: clamp(20px, 4vw, 48px);
@@ -90,20 +136,20 @@ body {
 }
 a { color: inherit; text-decoration: none; }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* HEADER */
 .site-header { background: var(--paper); padding: 24px 0 0; }
-.header-meta {
-  max-width: var(--maxw-wide);
-  margin: 0 auto 12px;
-  padding: 0 var(--gutter);
-  text-align: center;
-  font-family: var(--font-mono);
-  font-size: 10px;
-  font-weight: 600;
-  letter-spacing: 2.5px;
-  text-transform: uppercase;
-  color: var(--ink);
-}
 .masthead-wrap {
   border-top: 2px solid var(--ink);
   border-bottom: 1px solid var(--ink);
@@ -149,7 +195,7 @@ a { color: inherit; text-decoration: none; }
   margin-top: 6px;
 }
 
-/* TOP BAR (from + topics) */
+/* TOP BAR */
 .top-bar {
   background: var(--paper);
   border-bottom: 1px solid var(--rule);
@@ -178,6 +224,56 @@ a { color: inherit; text-decoration: none; }
   border-bottom: 1px solid var(--gold);
   padding-bottom: 1px;
 }
+
+/* MAIN NAVIGATION */
+.main-nav {
+  background: var(--paper);
+  border-bottom: 1px solid var(--ink);
+}
+.main-nav-inner {
+  max-width: var(--maxw-wide);
+  margin: 0 auto;
+  padding: 16px var(--gutter);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.main-nav-links {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+}
+.main-nav-links a {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--ink);
+  padding: 6px 0;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.15s, color 0.15s;
+}
+.main-nav-links a:hover,
+.main-nav-links a.active {
+  border-bottom-color: var(--gold);
+  color: var(--gold-deep);
+}
+.main-nav-cta {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  padding: 10px 22px;
+  background: var(--ink);
+  color: var(--paper);
+  border-radius: 2px;
+  transition: background 0.15s ease;
+}
+.main-nav-cta:hover { background: var(--gold-deep); }
 
 /* HERO */
 .hero {
@@ -219,7 +315,7 @@ a { color: inherit; text-decoration: none; }
   margin: 0 auto 40px;
 }
 
-/* SIGNUP BLOCK (Beehiiv embed container) */
+/* SIGNUP BLOCK */
 .signup-block {
   max-width: 560px;
   margin: 0 auto;
@@ -269,7 +365,6 @@ a { color: inherit; text-decoration: none; }
   text-transform: uppercase;
 }
 
-/* CTA Subscribe Button (for the secondary CTA link) */
 .cta-subscribe-btn {
   font-family: var(--font-mono);
   font-size: 12px;
@@ -294,11 +389,7 @@ a { color: inherit; text-decoration: none; }
   margin: 72px auto 0;
   padding: 0 var(--gutter);
 }
-.section-rule-line {
-  height: 1px;
-  background: var(--ink);
-  margin-bottom: 16px;
-}
+.section-rule-line { height: 1px; background: var(--ink); margin-bottom: 16px; }
 .section-rule-label {
   font-family: var(--font-mono);
   font-size: 11px;
@@ -359,7 +450,109 @@ a { color: inherit; text-decoration: none; }
   color: var(--text-body);
 }
 
-/* WHO IT'S FOR */
+/* TOPICS SECTION (evergreen content for SEO) */
+.topics-section {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 64px var(--gutter) 32px;
+}
+.topics-headline {
+  font-family: var(--font-serif);
+  font-size: clamp(30px, 4vw, 44px);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  color: var(--ink);
+  margin-bottom: 12px;
+  text-align: center;
+}
+.topics-headline em { font-style: italic; color: var(--gold-deep); }
+.topics-deck {
+  font-family: var(--font-serif);
+  font-size: 17px;
+  font-style: italic;
+  color: var(--muted);
+  text-align: center;
+  margin-bottom: 40px;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.topics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 36px 40px;
+}
+.topic-item {
+  padding-top: 18px;
+  border-top: 1px solid var(--rule);
+}
+.topic-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  margin-bottom: 10px;
+}
+.topic-title {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.25;
+  color: var(--ink);
+  margin-bottom: 10px;
+}
+.topic-desc {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-body);
+}
+
+/* STAT CALLOUT */
+.stat-callout {
+  max-width: var(--maxw);
+  margin: 64px auto;
+  padding: 0 var(--gutter);
+}
+.stat-callout-inner {
+  background: var(--paper-warm);
+  border-left: 4px solid var(--gold);
+  padding: 32px 36px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.stat-callout-number {
+  font-family: var(--font-serif);
+  font-size: clamp(56px, 9vw, 96px);
+  font-weight: 900;
+  line-height: 1;
+  color: var(--ink);
+  letter-spacing: -3px;
+  flex-shrink: 0;
+}
+.stat-callout-number em { font-style: italic; color: var(--gold-deep); font-size: 0.6em; font-weight: 400; }
+.stat-callout-text {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  line-height: 1.45;
+  color: var(--text-body);
+}
+.stat-callout-text strong { color: var(--ink); font-weight: 600; }
+.stat-callout-source {
+  display: block;
+  margin-top: 10px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* AUDIENCE */
 .audience-section {
   background: var(--paper-warm);
   padding: 72px 0;
@@ -407,48 +600,7 @@ a { color: inherit; text-decoration: none; }
   margin-top: 24px;
 }
 
-/* STAT CALLOUT */
-.stat-callout {
-  max-width: var(--maxw);
-  margin: 64px auto;
-  padding: 0 var(--gutter);
-}
-.stat-callout-inner {
-  background: var(--paper-warm);
-  border-left: 4px solid var(--gold);
-  padding: 32px 36px;
-  display: flex;
-  align-items: center;
-  gap: 32px;
-}
-.stat-callout-number {
-  font-family: var(--font-serif);
-  font-size: clamp(56px, 9vw, 96px);
-  font-weight: 900;
-  line-height: 1;
-  color: var(--ink);
-  letter-spacing: -3px;
-  flex-shrink: 0;
-}
-.stat-callout-number em { font-style: italic; color: var(--gold-deep); font-size: 0.6em; font-weight: 400; }
-.stat-callout-text {
-  font-family: var(--font-serif);
-  font-size: 18px;
-  line-height: 1.45;
-  color: var(--text-body);
-}
-.stat-callout-text strong { color: var(--ink); font-weight: 600; }
-.stat-callout-source {
-  display: block;
-  margin-top: 10px;
-  font-family: var(--font-mono);
-  font-size: 10px;
-  letter-spacing: 1.8px;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-
-/* SAMPLE ISSUE PREVIEW */
+/* SAMPLE SECTION */
 .sample-section {
   max-width: var(--maxw);
   margin: 0 auto;
@@ -493,9 +645,7 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
   margin-top: 4px;
 }
-.sample-body {
-  padding: 28px;
-}
+.sample-body { padding: 28px; }
 .sample-section-block {
   margin-bottom: 28px;
   padding-bottom: 24px;
@@ -530,6 +680,137 @@ a { color: inherit; text-decoration: none; }
   color: var(--text-body);
 }
 .sample-section-text em { color: var(--gold-deep); font-weight: 500; }
+
+/* LIBRARY CARDS (evergreen content + internal linking) */
+.library-cards-section {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 64px var(--gutter) 32px;
+}
+.library-cards-headline {
+  font-family: var(--font-serif);
+  font-size: clamp(30px, 4vw, 44px);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  color: var(--ink);
+  margin-bottom: 12px;
+  text-align: center;
+}
+.library-cards-headline em { font-style: italic; color: var(--gold-deep); }
+.library-cards-deck {
+  font-family: var(--font-serif);
+  font-size: 17px;
+  font-style: italic;
+  color: var(--muted);
+  text-align: center;
+  margin-bottom: 40px;
+}
+.library-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 32px;
+}
+.library-card {
+  background: var(--paper-pure);
+  border: 1px solid var(--rule);
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.library-card:hover {
+  border-color: var(--gold);
+  transform: translateY(-2px);
+}
+.library-card-num {
+  font-family: var(--font-serif);
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 14px;
+  letter-spacing: -1px;
+}
+.library-card-title {
+  font-family: var(--font-serif);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.25;
+  color: var(--ink);
+  margin-bottom: 12px;
+}
+.library-card-desc {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--text-body);
+  margin-bottom: 18px;
+  flex-grow: 1;
+}
+.library-card-link {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--ink);
+  padding-bottom: 3px;
+  border-bottom: 1px solid var(--gold);
+  align-self: flex-start;
+}
+.library-card-link::after { content: " →"; }
+.library-cards-cta {
+  text-align: center;
+}
+.library-cards-cta-link {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  border-bottom: 1px solid var(--gold);
+  padding-bottom: 3px;
+}
+
+/* FAQ SECTION (evergreen content for SEO) */
+.faq-section {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 64px var(--gutter) 32px;
+}
+.faq-headline {
+  font-family: var(--font-serif);
+  font-size: clamp(30px, 4vw, 44px);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  color: var(--ink);
+  margin-bottom: 40px;
+  text-align: center;
+}
+.faq-headline em { font-style: italic; color: var(--gold-deep); }
+.faq-item {
+  border-bottom: 1px solid var(--rule);
+  padding: 24px 0;
+}
+.faq-item:first-child { border-top: 1px solid var(--rule); }
+.faq-question {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--ink);
+  margin-bottom: 12px;
+}
+.faq-answer {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--text-body);
+}
 
 /* SECONDARY CTA */
 .cta-section {
@@ -620,7 +901,8 @@ a { color: inherit; text-decoration: none; }
 
 /* MOBILE */
 @media (max-width: 720px) {
-  .expect-grid { grid-template-columns: 1fr; gap: 28px; }
+  .expect-grid, .topics-grid { grid-template-columns: 1fr; gap: 28px; }
+  .library-cards-grid { grid-template-columns: 1fr; gap: 20px; }
   .stat-callout-inner {
     flex-direction: column;
     text-align: center;
@@ -631,6 +913,10 @@ a { color: inherit; text-decoration: none; }
   .sample-body { padding: 24px 20px; }
   .sample-header { padding: 20px 22px; }
   .sample-header-title { font-size: 26px; }
+  .main-nav-inner { gap: 12px; }
+  .main-nav-links { gap: 18px; }
+  .main-nav-links a { font-size: 10px; letter-spacing: 1.8px; }
+  .main-nav-cta { padding: 9px 16px; font-size: 10px; letter-spacing: 1.8px; }
 }
 
 @media (max-width: 480px) {
@@ -638,13 +924,14 @@ a { color: inherit; text-decoration: none; }
   .top-bar-topics { display: none; }
   .footer-links { gap: 18px; }
   .footer-links a { font-size: 10px; }
+  .main-nav-inner { flex-direction: column; align-items: center; }
+  .main-nav-links { gap: 16px; }
 }
 </style>
 </head>
 <body>
 
 <header class="site-header">
-  <div class="header-meta">VOL. I · ISSUE 001 · SUNDAYS</div>
   <div class="masthead-wrap">
     <a href="/" class="masthead">
       <div class="masthead-title">Tokenized<em> Report</em></div>
@@ -660,6 +947,17 @@ a { color: inherit; text-decoration: none; }
   </div>
 </div>
 
+<nav class="main-nav" aria-label="Primary">
+  <div class="main-nav-inner">
+    <ul class="main-nav-links">
+      <li><a href="/" class="active">Home</a></li>
+      <li><a href="/library/">Library</a></li>
+      <li><a href="https://tokenizedreport.beehiiv.com/" target="_blank" rel="noopener">Archive<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    <a href="#subscribe" class="main-nav-cta">Subscribe</a>
+  </div>
+</nav>
+
 <section class="hero">
   <div class="hero-eyebrow">Independent. Editorial. Sunday Mornings.</div>
   <h1 class="hero-title">The crypto newsletter for women who are <em>not</em> here for the noise.</h1>
@@ -668,10 +966,9 @@ a { color: inherit; text-decoration: none; }
   <div class="signup-block" id="subscribe">
     <div class="signup-label">Subscribe Free</div>
     <h2 class="signup-headline">Get Tokenized Report every Sunday.</h2>
-    <!-- Beehiiv embed: Newsletter Signup form -->
     <div class="beehiiv-tracker" data-form-type="newsletter">
-    <script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="11e6369a-bdb1-4046-baf9-c135aa93a6a4"></script>
-      </div>
+      <script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="11e6369a-bdb1-4046-baf9-c135aa93a6a4"></script>
+    </div>
     <div class="signup-note">No spam. Unsubscribe anytime.</div>
   </div>
 </section>
@@ -707,6 +1004,39 @@ a { color: inherit; text-decoration: none; }
   </div>
 </section>
 
+<div class="section-rule">
+  <div class="section-rule-line"></div>
+  <div class="section-rule-label">Topics We Cover</div>
+</div>
+
+<section class="topics-section">
+  <h2 class="topics-headline">The financial infrastructure being built <em>on-chain</em>.</h2>
+  <p class="topics-deck">Four beats, covered weekly. The technology, the policy, and the practical implications for readers building wealth.</p>
+
+  <div class="topics-grid">
+    <div class="topic-item">
+      <div class="topic-label">Beat One</div>
+      <h3 class="topic-title">Real-World Assets (RWA)</h3>
+      <p class="topic-desc">Tokenized Treasuries, real estate, private credit, and commodities. The institutional asset classes moving on-chain through issuers like BlackRock, Franklin Templeton, Apollo, and Fidelity. As of Q1 2026, the tokenized RWA market exceeds $19 billion and continues to grow at triple-digit annual rates.</p>
+    </div>
+    <div class="topic-item">
+      <div class="topic-label">Beat Two</div>
+      <h3 class="topic-title">Stablecoin Yield</h3>
+      <p class="topic-desc">USDC, USDT, and the regulatory fight over whether stablecoin holders can earn yield. The GENIUS Act of 2025 reshaped the stablecoin landscape. The CLARITY Act may reshape it again. We cover the policy, the products, and what each shift means for retail holders.</p>
+    </div>
+    <div class="topic-item">
+      <div class="topic-label">Beat Three</div>
+      <h3 class="topic-title">Tokenization Structure</h3>
+      <p class="topic-desc">The legal, custodial, and technical mechanics of putting financial instruments on-chain. SPVs and bankruptcy remoteness. Proof of reserves. Smart contract audits. Frameworks for evaluating what you are actually being offered when an issuer pitches a tokenized product.</p>
+    </div>
+    <div class="topic-item">
+      <div class="topic-label">Beat Four</div>
+      <h3 class="topic-title">Policy and Regulation</h3>
+      <p class="topic-desc">SEC tokenization guidance. The CLARITY Act through Congress. CFTC jurisdiction. State-level legislation. Plus the ongoing DTC tokenization pilot and what it means for traditional securities settlement. The policy moves that determine what is possible in tokenization.</p>
+    </div>
+  </div>
+</section>
+
 <div class="stat-callout">
   <div class="stat-callout-inner">
     <div class="stat-callout-number">44<em>%</em></div>
@@ -736,8 +1066,8 @@ a { color: inherit; text-decoration: none; }
   <div class="sample-card">
     <div class="sample-header">
       <div class="sample-header-meta">
-        <span>VOL. I · ISSUE 001</span>
-        <span>SAMPLE FORMAT</span>
+        <span>SAMPLE ISSUE</span>
+        <span>FORMAT PREVIEW</span>
       </div>
       <div class="sample-header-title">Tokenized Report</div>
       <div class="sample-header-sub">The weekly editorial brief on digital ownership.</div>
@@ -769,11 +1099,82 @@ a { color: inherit; text-decoration: none; }
         <div class="sample-section-text">The week's best journalism from elsewhere. One sentence on why each piece earned its place.</div>
       </div>
       <div class="sample-section-block">
-        <div class="sample-section-label">From The Learn Hub</div>
-        <div class="sample-section-title">One evergreen guide from Women in Crypto Global worth bookmarking.</div>
-        <div class="sample-section-text">Tokenized real estate. Stablecoin yield ranked. Crypto taxes 2026. Always one. Always relevant.</div>
+        <div class="sample-section-label">From The Library</div>
+        <div class="sample-section-title">One evergreen guide worth bookmarking.</div>
+        <div class="sample-section-text">The Vetting Checklist. The Glossary. The Red-Flag Phrases. Always one. Always relevant.</div>
       </div>
     </div>
+  </div>
+</section>
+
+<div class="section-rule">
+  <div class="section-rule-line"></div>
+  <div class="section-rule-label">From The Library</div>
+</div>
+
+<section class="library-cards-section">
+  <h2 class="library-cards-headline">Free guides for the <em>new financial infrastructure</em>.</h2>
+  <p class="library-cards-deck">Field guides on tokenization, written for readers who want frameworks, not hype.</p>
+
+  <div class="library-cards-grid">
+    <a href="/library/vetting-checklist/" class="library-card">
+      <div class="library-card-num">01</div>
+      <h3 class="library-card-title">The Tokenized Asset Vetting Checklist</h3>
+      <p class="library-card-desc">Ten questions any investor should be able to answer before putting money into a tokenized offering.</p>
+      <span class="library-card-link">Read &amp; download</span>
+    </a>
+
+    <a href="/library/red-flag-phrases/" class="library-card">
+      <div class="library-card-num">02</div>
+      <h3 class="library-card-title">Five Phrases That Should Make You Walk Away</h3>
+      <p class="library-card-desc">The language tokenization sellers use to dress up risk and dodge regulation, decoded.</p>
+      <span class="library-card-link">Read &amp; download</span>
+    </a>
+
+    <a href="/library/q1-2026-numbers/" class="library-card">
+      <div class="library-card-num">05</div>
+      <h3 class="library-card-title">The Five Most Important RWA Numbers</h3>
+      <p class="library-card-desc">A quarterly data brief on the tokenized real-world asset market, with sources and context.</p>
+      <span class="library-card-link">Read &amp; download</span>
+    </a>
+  </div>
+
+  <div class="library-cards-cta">
+    <a href="/library/" class="library-cards-cta-link">Browse the full library →</a>
+  </div>
+</section>
+
+<div class="section-rule">
+  <div class="section-rule-line"></div>
+  <div class="section-rule-label">Frequently Asked</div>
+</div>
+
+<section class="faq-section">
+  <h2 class="faq-headline">Questions about <em>Tokenized Report</em>.</h2>
+
+  <div class="faq-item">
+    <h3 class="faq-question">What is Tokenized Report?</h3>
+    <p class="faq-answer">Tokenized Report is a weekly editorial newsletter covering real-world asset tokenization, stablecoin yield, and on-chain financial infrastructure. It is published by Women in Crypto Global and written for readers who want serious financial journalism applied to the crypto sector, without the hype or speculation that dominates most crypto media.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3 class="faq-question">Who is Tokenized Report for?</h3>
+    <p class="faq-answer">Tokenized Report is built for women 45 and older who hold the largest share of new US crypto wallets in 2026, for financial advisors fielding client questions about tokenized assets, for journalists covering the space, and for any reader who wants to understand the financial infrastructure being built on-chain without learning to read smart contract code.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3 class="faq-question">How often does Tokenized Report publish?</h3>
+    <p class="faq-answer">Tokenized Report publishes weekly on Sunday mornings. Each issue follows a consistent format: three stories, one chart, and one tactical takeaway, designed to be read in seven to ten minutes.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3 class="faq-question">Does Tokenized Report cost anything?</h3>
+    <p class="faq-answer">The weekly newsletter is free. All editorial guides in the Tokenized Report Library are also free with no email required. A paid tier with extended analysis, premium guides, and direct access to the editor will launch later in 2026.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3 class="faq-question">Who writes Tokenized Report?</h3>
+    <p class="faq-answer">Tokenized Report is edited by Julie James, founder of Women in Crypto Global. Julie launched WICG in 2021 and rebuilt it as an editorial publication in 2026 to serve the audience traditional crypto media has overlooked.</p>
   </div>
 </section>
 
@@ -789,6 +1190,8 @@ a { color: inherit; text-decoration: none; }
     <div class="footer-sub">From Women in Crypto Global.</div>
     <div class="footer-rule"></div>
     <div class="footer-links">
+      <a href="/library/">Library</a>
+      <a href="https://tokenizedreport.beehiiv.com/" target="_blank" rel="noopener">Archive</a>
       <a href="https://womenincryptoglobal.com">The Publication</a>
       <a href="https://womenincryptoglobal.com/learn.html">Learn Hub</a>
       <a href="https://womenincryptoglobal.com/our-mission.html">Our Mission</a>
@@ -802,19 +1205,19 @@ a { color: inherit; text-decoration: none; }
   </div>
 </footer>
 
-  <script>
-  document.addEventListener('click', function(e) {
-    const tracker = e.target.closest('.beehiiv-tracker');
-    if (!tracker) return;
-    const formType = tracker.getAttribute('data-form-type') || 'unknown';
-    if (typeof gtag === 'function') {
-      gtag('event', 'subscribe_click', {
-        form_type: formType,
-        page_path: window.location.pathname,
-        page_host: window.location.hostname
-      });
-    }
-  });
+<script>
+document.addEventListener('click', function(e) {
+  const tracker = e.target.closest('.beehiiv-tracker');
+  if (!tracker) return;
+  const formType = tracker.getAttribute('data-form-type') || 'unknown';
+  if (typeof gtag === 'function') {
+    gtag('event', 'subscribe_click', {
+      form_type: formType,
+      page_path: window.location.pathname,
+      page_host: window.location.hostname
+    });
+  }
+});
 </script>
 </body>
 </html>
