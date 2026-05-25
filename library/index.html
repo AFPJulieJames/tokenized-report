@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-53GYPXBTZ7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-53GYPXBTZ7");
+</script>
+
+<title>The Library | Tokenized Report</title>
+<meta name="description" content="Free editorial cheatsheets on tokenization, real-world assets, stablecoin yield, and on-chain finance. Published by Tokenized Report.">
+<meta name="author" content="Women in Crypto Global">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tokenized.report/library/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Tokenized Report Library">
+<meta property="og:description" content="Free editorial guides on tokenization, real-world assets, and stablecoin yield.">
+<meta property="og:site_name" content="Tokenized Report">
+<meta property="og:url" content="https://tokenized.report/library/">
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230a0a0a'/%3E%3Cline x1='20' y1='32' x2='80' y2='32' stroke='%23c9a961' stroke-width='3'/%3E%3Ctext x='50' y='63' font-family='Playfair Display, Georgia, serif' font-size='36' font-weight='900' fill='%23f5f0e8' text-anchor='middle' letter-spacing='-1.5'%3ET%3C/text%3E%3Cline x1='20' y1='68' x2='80' y2='68' stroke='%23c9a961' stroke-width='3'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --ink: #0a0a0a;
+  --paper: #faf7f2;
+  --paper-warm: #f5f0e8;
+  --paper-pure: #ffffff;
+  --gold: #c9a961;
+  --gold-deep: #a8884a;
+  --gold-light: #e8d8b3;
+  --rule: #e5e0d6;
+  --muted: #6b6660;
+  --text-body: #2a2620;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+  --maxw: 760px;
+  --maxw-wide: 1280px;
+  --gutter: clamp(20px, 4vw, 48px);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-sans);
+  background: var(--paper);
+  color: var(--text-body);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+a { color: inherit; text-decoration: none; }
+
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
+
+/* HEADER */
+.site-header { background: var(--paper); padding: 24px 0 0; }
+.masthead-wrap {
+  border-top: 2px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  position: relative;
+}
+.masthead-wrap::before {
+  content: ''; position: absolute; top: 4px; left: 0; right: 0;
+  height: 1px; background: var(--ink);
+}
+.masthead {
+  max-width: var(--maxw-wide);
+  margin: 0 auto;
+  padding: 32px var(--gutter) 26px;
+  text-align: center;
+  display: block;
+}
+.masthead-title {
+  font-family: var(--font-serif);
+  font-size: clamp(40px, 7vw, 78px);
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -2.5px;
+  color: var(--ink);
+  text-transform: uppercase;
+}
+.masthead-title em {
+  font-style: italic; font-weight: 400; color: var(--gold-deep);
+  text-transform: none; letter-spacing: -1px;
+}
+.masthead-sub {
+  font-family: var(--font-serif);
+  font-style: italic; font-weight: 400;
+  font-size: clamp(16px, 2vw, 22px);
+  color: var(--ink); letter-spacing: 1px; margin-top: 6px;
+}
+
+/* TOP BAR */
+.top-bar { background: var(--paper); border-bottom: 1px solid var(--rule); }
+.top-bar-inner {
+  max-width: var(--maxw-wide); margin: 0 auto;
+  padding: 14px var(--gutter);
+  display: flex; justify-content: space-between;
+  align-items: center; flex-wrap: wrap; gap: 12px;
+}
+.top-bar-from, .top-bar-topics {
+  font-family: var(--font-mono);
+  font-size: 10.5px; font-weight: 600;
+  letter-spacing: 1.8px; text-transform: uppercase;
+  color: var(--muted);
+}
+.top-bar-from a {
+  color: var(--gold-deep);
+  border-bottom: 1px solid var(--gold);
+  padding-bottom: 1px;
+}
+
+/* MAIN NAVIGATION */
+.main-nav { background: var(--paper); border-bottom: 1px solid var(--ink); }
+.main-nav-inner {
+  max-width: var(--maxw-wide); margin: 0 auto;
+  padding: 16px var(--gutter);
+  display: flex; justify-content: space-between;
+  align-items: center; flex-wrap: wrap; gap: 16px;
+}
+.main-nav-links { display: flex; gap: 28px; list-style: none; }
+.main-nav-links a {
+  font-family: var(--font-mono);
+  font-size: 11px; font-weight: 700;
+  letter-spacing: 2.5px; text-transform: uppercase;
+  color: var(--ink); padding: 6px 0;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.15s, color 0.15s;
+}
+.main-nav-links a:hover, .main-nav-links a.active {
+  border-bottom-color: var(--gold); color: var(--gold-deep);
+}
+.main-nav-cta {
+  font-family: var(--font-mono);
+  font-size: 11px; font-weight: 700;
+  letter-spacing: 2.5px; text-transform: uppercase;
+  padding: 10px 22px;
+  background: var(--ink); color: var(--paper);
+  border-radius: 2px;
+  transition: background 0.15s ease;
+}
+.main-nav-cta:hover { background: var(--gold-deep); }
+
+/* HERO */
+.hero {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 72px var(--gutter) 48px;
+  text-align: center;
+}
+.hero-eyebrow {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 11px; font-weight: 700;
+  letter-spacing: 3px; text-transform: uppercase;
+  color: var(--gold-deep);
+  background: rgba(201,169,97,0.1);
+  padding: 8px 14px;
+  margin-bottom: 28px;
+}
+.hero-title {
+  font-family: var(--font-serif);
+  font-size: clamp(38px, 6vw, 64px);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -2px;
+  color: var(--ink);
+  margin-bottom: 24px;
+}
+.hero-title em { font-style: italic; color: var(--gold-deep); font-weight: 500; }
+.hero-deck {
+  font-family: var(--font-serif);
+  font-size: clamp(18px, 2.2vw, 22px);
+  line-height: 1.5;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--muted);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* SECTION RULE */
+.section-rule {
+  max-width: var(--maxw);
+  margin: 72px auto 0;
+  padding: 0 var(--gutter);
+}
+.section-rule-line { height: 1px; background: var(--ink); margin-bottom: 16px; }
+.section-rule-label {
+  font-family: var(--font-mono);
+  font-size: 11px; font-weight: 700;
+  letter-spacing: 3px; text-transform: uppercase;
+  color: var(--ink); text-align: center;
+}
+
+/* LIBRARY ENTRIES */
+.library-section {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 48px var(--gutter) 64px;
+}
+.section-heading {
+  font-family: var(--font-serif);
+  font-size: clamp(28px, 4vw, 38px);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  color: var(--ink);
+  text-align: center;
+  margin-bottom: 48px;
+}
+.section-heading em { font-style: italic; color: var(--gold-deep); }
+
+.cheatsheet-entry {
+  padding: 40px 0;
+  border-bottom: 1px solid var(--rule);
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 36px;
+  align-items: start;
+}
+.cheatsheet-entry:last-child { border-bottom: none; }
+
+.cheatsheet-number {
+  font-family: var(--font-serif);
+  font-size: 56px;
+  line-height: 0.9;
+  color: var(--gold);
+  font-weight: 700;
+  letter-spacing: -2px;
+}
+
+.cheatsheet-meta {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 2.5px;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.cheatsheet-title {
+  font-family: var(--font-serif);
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+.cheatsheet-title a { color: var(--ink); transition: color 0.15s; }
+.cheatsheet-title a:hover { color: var(--gold-deep); }
+
+.cheatsheet-description {
+  font-family: var(--font-sans);
+  font-size: 15.5px;
+  line-height: 1.65;
+  color: var(--text-body);
+  margin-bottom: 16px;
+}
+
+.cheatsheet-stats {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--muted);
+  margin-bottom: 18px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.cheatsheet-stats span { margin-right: 14px; }
+
+.cheatsheet-link {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--ink);
+  font-weight: 700;
+  border-bottom: 1px solid var(--gold);
+  padding-bottom: 2px;
+  transition: color 0.15s, border-color 0.15s;
+}
+.cheatsheet-link:hover { color: var(--gold-deep); border-bottom-color: var(--gold-deep); }
+.cheatsheet-link::after { content: " →"; }
+
+/* SUBSCRIBE BLOCK */
+.subscribe-block {
+  background: var(--paper-warm);
+  padding: 72px 0;
+  text-align: center;
+  margin-top: 24px;
+}
+.subscribe-inner {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+.subscribe-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  margin-bottom: 16px;
+}
+.subscribe-headline {
+  font-family: var(--font-serif);
+  font-size: clamp(28px, 4vw, 36px);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -1px;
+  color: var(--ink);
+  margin-bottom: 18px;
+}
+.subscribe-headline em { font-style: italic; color: var(--gold-deep); }
+.subscribe-description {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--muted);
+  margin-bottom: 28px;
+  font-style: italic;
+}
+
+/* FOOTER */
+.site-footer {
+  background: var(--ink);
+  color: var(--paper);
+  padding: 56px 0 32px;
+}
+.footer-inner {
+  max-width: var(--maxw-wide);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+  text-align: center;
+}
+.footer-title {
+  font-family: var(--font-serif);
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+.footer-sub {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 14px;
+  color: var(--gold-light);
+  margin-bottom: 32px;
+}
+.footer-rule { width: 80px; height: 1px; background: var(--gold); margin: 0 auto 32px; }
+.footer-links {
+  display: flex; justify-content: center; gap: 28px;
+  flex-wrap: wrap; margin-bottom: 28px;
+  font-family: var(--font-mono);
+  font-size: 11px; font-weight: 600;
+  letter-spacing: 1.8px; text-transform: uppercase;
+}
+.footer-links a {
+  color: var(--paper); opacity: 0.85;
+  transition: opacity 0.15s;
+}
+.footer-links a:hover { opacity: 1; color: var(--gold-light); }
+.footer-meta {
+  font-family: var(--font-mono);
+  font-size: 10px; letter-spacing: 1.5px;
+  color: var(--muted); text-transform: uppercase;
+  line-height: 1.8;
+}
+.footer-meta a { color: var(--gold-light); }
+
+/* MOBILE */
+@media (max-width: 720px) {
+  .cheatsheet-entry {
+    grid-template-columns: 60px 1fr;
+    gap: 20px;
+    padding: 32px 0;
+  }
+  .cheatsheet-number { font-size: 36px; }
+  .cheatsheet-title { font-size: 22px; }
+  .main-nav-inner { gap: 12px; }
+  .main-nav-links { gap: 18px; }
+  .main-nav-links a { font-size: 10px; letter-spacing: 1.8px; }
+  .main-nav-cta { padding: 9px 16px; font-size: 10px; letter-spacing: 1.8px; }
+}
+
+@media (max-width: 480px) {
+  .top-bar-inner { justify-content: center; }
+  .top-bar-topics { display: none; }
+  .footer-links { gap: 18px; }
+  .footer-links a { font-size: 10px; }
+  .main-nav-inner { flex-direction: column; align-items: center; }
+  .main-nav-links { gap: 16px; }
+  .cheatsheet-entry { grid-template-columns: 1fr; gap: 12px; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="masthead-wrap">
+    <a href="/" class="masthead">
+      <div class="masthead-title">Tokenized<em> Report</em></div>
+      <div class="masthead-sub">The weekly editorial brief on digital ownership.</div>
+    </a>
+  </div>
+</header>
+
+<div class="top-bar">
+  <div class="top-bar-inner">
+    <div class="top-bar-from">From <a href="https://womenincryptoglobal.com" target="_blank" rel="noopener">Women in Crypto Global</a></div>
+    <div class="top-bar-topics">RWA · STABLECOIN YIELD · TOKENIZATION</div>
+  </div>
+</div>
+
+<nav class="main-nav" aria-label="Primary">
+  <div class="main-nav-inner">
+    <ul class="main-nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/library/" class="active">Library</a></li>
+      <li><a href="https://tokenizedreport.beehiiv.com/" target="_blank" rel="noopener">Archive<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    <a href="/#subscribe" class="main-nav-cta">Subscribe</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-eyebrow">The Library</div>
+  <h1 class="hero-title">Field guides for the<br>new <em>financial infrastructure</em>.</h1>
+  <p class="hero-deck">Free editorial cheatsheets on tokenization, real-world assets, stablecoin yield, and on-chain finance. Built for readers who want frameworks, not hype.</p>
+</section>
+
+<div class="section-rule">
+  <div class="section-rule-line"></div>
+  <div class="section-rule-label">Available Now</div>
+</div>
+
+<section class="library-section">
+  <h2 class="section-heading">The <em>catalog</em>.</h2>
+
+  <article class="cheatsheet-entry">
+    <div class="cheatsheet-number">01</div>
+    <div>
+      <div class="cheatsheet-meta">A Field Guide · May 2026</div>
+      <h3 class="cheatsheet-title"><a href="/library/vetting-checklist/">The Tokenized Asset Vetting Checklist</a></h3>
+      <p class="cheatsheet-description">Ten questions any investor should be able to answer before putting money into a tokenized offering. Covers issuer structure, custody, proof of reserves, smart contract audits, bankruptcy remoteness, and seven other tests. If the issuer cannot answer them, that is itself the answer.</p>
+      <div class="cheatsheet-stats">
+        <span>7 pages</span><span>PDF</span><span>No email required</span>
+      </div>
+      <a href="/library/vetting-checklist/" class="cheatsheet-link">Read &amp; download</a>
+    </div>
+  </article>
+
+  <article class="cheatsheet-entry">
+    <div class="cheatsheet-number">02</div>
+    <div>
+      <div class="cheatsheet-meta">A Field Guide · May 2026</div>
+      <h3 class="cheatsheet-title"><a href="/library/red-flag-phrases/">Five Phrases That Should Make You Walk Away</a></h3>
+      <p class="cheatsheet-description">The language tokenization sellers use to dress up risk and dodge regulation. Each phrase explained with the technical or regulatory reason it is a warning, plus the specific question to ask that reveals whether the offering is what the marketing implies.</p>
+      <div class="cheatsheet-stats">
+        <span>6 pages</span><span>PDF</span><span>No email required</span>
+      </div>
+      <a href="/library/red-flag-phrases/" class="cheatsheet-link">Read &amp; download</a>
+    </div>
+  </article>
+
+  <article class="cheatsheet-entry">
+    <div class="cheatsheet-number">03</div>
+    <div>
+      <div class="cheatsheet-meta">A Reference Guide · May 2026</div>
+      <h3 class="cheatsheet-title"><a href="/library/glossary/">The Tokenization Glossary</a></h3>
+      <p class="cheatsheet-description">Plain-English definitions of the 25 terms that show up most often in tokenization marketing, offering documents, and regulatory text. Every term defined twice: once in industry language, once the way a friend who knows the space would explain it over coffee.</p>
+      <div class="cheatsheet-stats">
+        <span>10 pages</span><span>PDF</span><span>No email required</span>
+      </div>
+      <a href="/library/glossary/" class="cheatsheet-link">Read &amp; download</a>
+    </div>
+  </article>
+
+  <article class="cheatsheet-entry">
+    <div class="cheatsheet-number">04</div>
+    <div>
+      <div class="cheatsheet-meta">A Reference Guide · May 2026</div>
+      <h3 class="cheatsheet-title"><a href="/library/chains/">Where Your Tokenized Assets Actually Live</a></h3>
+      <p class="cheatsheet-description">A field guide to the blockchains hosting real-world assets in 2026, what each one is best for, the institutional adoption profile of each, and which ones should make you pause regardless of how clean the offering looks. Ethereum, Solana, Stellar, the L2s, and the reputational red flags.</p>
+      <div class="cheatsheet-stats">
+        <span>8 pages</span><span>PDF</span><span>No email required</span>
+      </div>
+      <a href="/library/chains/" class="cheatsheet-link">Read &amp; download</a>
+    </div>
+  </article>
+
+  <article class="cheatsheet-entry">
+    <div class="cheatsheet-number">05</div>
+    <div>
+      <div class="cheatsheet-meta">Quarterly Data Brief · Q1 2026</div>
+      <h3 class="cheatsheet-title"><a href="/library/q1-2026-numbers/">The Five Most Important RWA Numbers</a></h3>
+      <p class="cheatsheet-description">Five numbers that define the tokenized real-world asset market in Q1 2026, with sources, context, and what each one signals about what comes next. Pulled from primary sources: CoinGecko, RWA.xyz, Chainalysis, The Block, Grayscale Research, and individual issuer disclosures.</p>
+      <div class="cheatsheet-stats">
+        <span>7 pages</span><span>PDF</span><span>No email required</span>
+      </div>
+      <a href="/library/q1-2026-numbers/" class="cheatsheet-link">Read &amp; download</a>
+    </div>
+  </article>
+
+</section>
+
+<section class="subscribe-block">
+  <div class="subscribe-inner">
+    <div class="subscribe-eyebrow">The Weekly Brief</div>
+    <h2 class="subscribe-headline">Get the next field guide in your <em>inbox</em>.</h2>
+    <p class="subscribe-description">Tokenized Report publishes Sunday mornings. Three stories, one chart, one tactic. Built for people who don't have time for crypto Twitter.</p>
+    <div class="beehiiv-tracker" data-form-type="newsletter">
+      <script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="11e6369a-bdb1-4046-baf9-c135aa93a6a4"></script>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-title">Tokenized Report</div>
+    <div class="footer-sub">From Women in Crypto Global.</div>
+    <div class="footer-rule"></div>
+    <div class="footer-links">
+      <a href="/library/">Library</a>
+      <a href="https://tokenizedreport.beehiiv.com/" target="_blank" rel="noopener">Archive</a>
+      <a href="https://womenincryptoglobal.com">The Publication</a>
+      <a href="https://womenincryptoglobal.com/learn.html">Learn Hub</a>
+      <a href="https://womenincryptoglobal.com/our-mission.html">Our Mission</a>
+      <a href="https://womenincryptoglobal.com/contact.html">Contact</a>
+    </div>
+    <div class="footer-meta">
+      © 2026 Women in Crypto Global · All rights reserved<br>
+      Editorial &amp; partnerships: <a href="mailto:hello@womenincryptoglobal.com">hello@womenincryptoglobal.com</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.addEventListener('click', function(e) {
+  const tracker = e.target.closest('.beehiiv-tracker');
+  if (!tracker) return;
+  const formType = tracker.getAttribute('data-form-type') || 'unknown';
+  if (typeof gtag === 'function') {
+    gtag('event', 'subscribe_click', {
+      form_type: formType,
+      page_path: window.location.pathname,
+      page_host: window.location.hostname
+    });
+  }
+});
+</script>
+</body>
+</html>
