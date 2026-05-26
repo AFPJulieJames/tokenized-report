@@ -1,0 +1,7 @@
+# Tokenized Report - robots.txt
+# https://tokenized.report
+
+User-agent: *
+Allow: /
+
+Sitemap: https://tokenized.report/sitemap.xml
