@@ -767,56 +767,25 @@ a { color: inherit; text-decoration: none; }
 .library-cards-cta {
   text-align: center;
 }
-  /* START HERE SECTION (foundation path for new visitors) */
-.start-here-section {
-  max-width: var(--maxw);
+ /* START HERE STRIP (compact callout under hero) */
+.start-here-strip {
+  max-width: var(--maxw-wide);
   margin: 0 auto;
-  padding: 48px var(--gutter) 32px;
+  padding: 0 var(--gutter);
 }
-.start-here-headline {
-  font-family: var(--font-serif);
-  font-size: clamp(30px, 4vw, 44px);
-  font-weight: 400;
-  line-height: 1.1;
-  letter-spacing: -1px;
-  color: var(--ink);
-  margin-bottom: 12px;
-  text-align: center;
-}
-.start-here-headline em { font-style: italic; color: var(--gold-deep); }
-.start-here-deck {
-  font-family: var(--font-serif);
-  font-size: 17px;
-  font-style: italic;
-  color: var(--muted);
-  text-align: center;
-  margin-bottom: 40px;
-  max-width: 560px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.start-here-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-.start-here-card {
+.start-here-strip-inner {
   background: var(--paper-warm);
   border: 1px solid var(--gold-light);
-  border-top: 3px solid var(--gold);
-  padding: 24px 22px 28px;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+  border-left: 4px solid var(--gold);
+  padding: 28px 32px;
+  display: grid;
+  grid-template-columns: 1.5fr 2fr auto;
+  align-items: center;
+  gap: 32px;
+  max-width: var(--maxw);
+  margin: 0 auto;
 }
-.start-here-card:hover {
-  border-color: var(--gold-deep);
-  border-top-color: var(--gold-deep);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-}
-.start-here-card-step {
+.start-here-strip-eyebrow {
   font-family: var(--font-mono);
   font-size: 10px;
   font-weight: 700;
@@ -825,52 +794,71 @@ a { color: inherit; text-decoration: none; }
   color: var(--gold-deep);
   margin-bottom: 6px;
 }
-.start-here-card-num {
+.start-here-strip-title {
   font-family: var(--font-serif);
-  font-size: 42px;
-  font-weight: 700;
-  color: var(--ink);
-  line-height: 1;
-  margin-bottom: 14px;
-  letter-spacing: -1px;
-}
-.start-here-card-title {
-  font-family: var(--font-serif);
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 500;
-  line-height: 1.25;
+  line-height: 1.3;
   color: var(--ink);
-  margin-bottom: 12px;
 }
-.start-here-card-desc {
+.start-here-strip-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.start-here-strip-link {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
   font-family: var(--font-sans);
   font-size: 14px;
-  line-height: 1.55;
-  color: var(--text-body);
-  margin-bottom: 18px;
-  flex-grow: 1;
+  font-weight: 500;
+  color: var(--ink);
+  padding: 4px 0;
+  border-bottom: 1px solid transparent;
+  transition: color 0.15s, border-color 0.15s;
 }
-.start-here-card-link {
+.start-here-strip-link:hover {
+  color: var(--gold-deep);
+  border-bottom-color: var(--gold);
+}
+.start-here-strip-num {
+  font-family: var(--font-serif);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--gold-deep);
+  letter-spacing: -0.5px;
+}
+.start-here-strip-name { font-family: var(--font-sans); }
+.start-here-strip-cta {
   font-family: var(--font-mono);
-  font-size: 10.5px;
+  font-size: 10px;
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--ink);
-  padding-bottom: 3px;
-  border-bottom: 1px solid var(--gold);
-  align-self: flex-start;
+  padding: 12px 18px;
+  background: var(--paper);
+  border: 1px solid var(--ink);
+  border-radius: 2px;
+  white-space: nowrap;
+  transition: background 0.15s, color 0.15s;
 }
-.start-here-card-link::after { content: " →"; }
-.library-cards-cta-link {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 2.5px;
-  text-transform: uppercase;
-  color: var(--gold-deep);
-  border-bottom: 1px solid var(--gold);
-  padding-bottom: 3px;
+.start-here-strip-cta:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+@media (max-width: 720px) {
+  .start-here-strip-inner {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 24px;
+    text-align: left;
+  }
+  .start-here-strip-cta {
+    justify-self: start;
+  }
 }
 
 /* FAQ SECTION (evergreen content for SEO) */
@@ -999,7 +987,7 @@ a { color: inherit; text-decoration: none; }
 
 /* MOBILE */
 @media (max-width: 720px) {
-  .expect-grid, .topics-grid, .start-here-grid { grid-template-columns: 1fr; gap: 28px; }
+  .expect-grid, .topics-grid { grid-template-columns: 1fr; gap: 28px; }
   .library-cards-grid { grid-template-columns: 1fr; gap: 20px; }
   .stat-callout-inner {
     flex-direction: column;
@@ -1072,41 +1060,30 @@ a { color: inherit; text-decoration: none; }
   </div>
 </section>
 
-<div class="section-rule">
-  <div class="section-rule-line"></div>
-  <div class="section-rule-label">New Here? Start With These</div>
-</div>
-
-<section class="start-here-section">
-  <h2 class="start-here-headline">Three guides to read <em>first</em>.</h2>
-  <p class="start-here-deck">If tokenization is new to you, these three field guides build the foundation. Read them in order, then everything in the newsletter will make sense.</p>
-
-  <div class="start-here-grid">
-    <a href="/library/glossary/" class="start-here-card">
-      <div class="start-here-card-step">Step One</div>
-      <div class="start-here-card-num">01</div>
-      <h3 class="start-here-card-title">The Tokenization Glossary</h3>
-      <p class="start-here-card-desc">Plain-English definitions of 25 terms that show up in tokenization marketing, offering documents, and regulatory text.</p>
-      <span class="start-here-card-link">Start with the words</span>
-    </a>
-
-    <a href="/library/vetting-checklist/" class="start-here-card">
-      <div class="start-here-card-step">Step Two</div>
-      <div class="start-here-card-num">02</div>
-      <h3 class="start-here-card-title">The Tokenized Asset Vetting Checklist</h3>
-      <p class="start-here-card-desc">Ten questions every investor should be able to answer before putting money into a tokenized offering.</p>
-      <span class="start-here-card-link">Learn how to evaluate</span>
-    </a>
-
-    <a href="/library/chains/" class="start-here-card">
-      <div class="start-here-card-step">Step Three</div>
-      <div class="start-here-card-num">03</div>
-      <h3 class="start-here-card-title">Where Your Tokenized Assets Actually Live</h3>
-      <p class="start-here-card-desc">A field guide to the blockchains hosting real-world assets in 2026, with what each chain is built for.</p>
-      <span class="start-here-card-link">See where it all happens</span>
-    </a>
+<section class="start-here-strip">
+  <div class="start-here-strip-inner">
+    <div class="start-here-strip-meta">
+      <div class="start-here-strip-eyebrow">New to tokenization?</div>
+      <h2 class="start-here-strip-title">Start with these three guides, in order.</h2>
+    </div>
+    <div class="start-here-strip-links">
+      <a href="/library/glossary/" class="start-here-strip-link">
+        <span class="start-here-strip-num">01</span>
+        <span class="start-here-strip-name">Glossary</span>
+      </a>
+      <a href="/library/vetting-checklist/" class="start-here-strip-link">
+        <span class="start-here-strip-num">02</span>
+        <span class="start-here-strip-name">Vetting Checklist</span>
+      </a>
+      <a href="/library/chains/" class="start-here-strip-link">
+        <span class="start-here-strip-num">03</span>
+        <span class="start-here-strip-name">Chains</span>
+      </a>
+    </div>
+    <a href="/start-here/" class="start-here-strip-cta">See the full guide path →</a>
   </div>
 </section>
+
 
 <div class="section-rule">
   <div class="section-rule-line"></div>
