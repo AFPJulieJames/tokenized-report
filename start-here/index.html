@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-53GYPXBTZ7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-53GYPXBTZ7");
+</script>
+
+<title>Start Here: Three Guides to Tokenization | Tokenized Report</title>
+<meta name="description" content="New to tokenization? These three field guides build the foundation. Learn the language, the framework, and the infrastructure in the right order. Free from Tokenized Report.">
+<meta name="keywords" content="tokenization guide, learn tokenization, RWA beginner guide, tokenized assets starter, how to learn about tokenization, tokenization for beginners">
+<meta name="author" content="Julie James, Tokenized Report">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<link rel="canonical" href="https://tokenized.report/start-here/">
+
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://tokenized.report/start-here/">
+<meta property="og:title" content="Start Here: Three Guides to Tokenization">
+<meta property="og:description" content="New to tokenization? These three field guides build the foundation. Learn the language, the framework, and the infrastructure in the right order.">
+<meta property="og:image" content="https://tokenized.report/og-image-tr.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Start Here - Three guides to tokenization from Tokenized Report">
+<meta property="og:site_name" content="Tokenized Report">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Start Here: Three Guides to Tokenization">
+<meta name="twitter:description" content="New to tokenization? These three field guides build the foundation. Learn the language, the framework, and the infrastructure in the right order.">
+<meta name="twitter:image" content="https://tokenized.report/og-image-tr.png">
+<meta name="twitter:image:alt" content="Start Here - Three guides to tokenization from Tokenized Report">
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230a0a0a'/%3E%3Cline x1='20' y1='32' x2='80' y2='32' stroke='%23c9a961' stroke-width='3'/%3E%3Ctext x='50' y='63' font-family='Playfair Display, Georgia, serif' font-size='36' font-weight='900' fill='%23f5f0e8' text-anchor='middle' letter-spacing='-1.5'%3ET%3C/text%3E%3Cline x1='20' y1='68' x2='80' y2='68' stroke='%23c9a961' stroke-width='3'/%3E%3C/svg%3E">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Start Here: Three Guides to Tokenization",
+  "description": "Three foundational field guides on tokenization, ordered for new readers.",
+  "url": "https://tokenized.report/start-here/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Tokenized Report",
+    "url": "https://tokenized.report"
+  },
+  "mainContentOfPage": {
+    "@type": "ItemList",
+    "itemListOrder": "https://schema.org/ItemListOrderAscending",
+    "numberOfItems": 3,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "url": "https://tokenized.report/library/glossary/",
+        "name": "The Tokenization Glossary"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "url": "https://tokenized.report/library/vetting-checklist/",
+        "name": "The Tokenized Asset Vetting Checklist"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "url": "https://tokenized.report/library/chains/",
+        "name": "Where Your Tokenized Assets Actually Live"
+      }
+    ]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://tokenized.report"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Start Here",
+      "item": "https://tokenized.report/start-here/"
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --ink: #0a0a0a;
+  --ink-soft: #1a1a1a;
+  --paper: #faf7f2;
+  --paper-warm: #f5f0e8;
+  --paper-pure: #ffffff;
+  --gold: #c9a961;
+  --gold-deep: #a8884a;
+  --gold-light: #e8d8b3;
+  --rule: #e5e0d6;
+  --muted: #6b6660;
+  --text-body: #2a2620;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+  --maxw: 760px;
+  --maxw-wide: 1280px;
+  --gutter: clamp(20px, 4vw, 48px);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-sans);
+  background: var(--paper);
+  color: var(--text-body);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+a { color: inherit; text-decoration: none; }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* HEADER */
+.site-header { background: var(--paper); padding: 24px 0 0; }
+.masthead-wrap {
+  border-top: 2px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  position: relative;
+}
+.masthead-wrap::before {
+  content: '';
+  position: absolute;
+  top: 4px; left: 0; right: 0;
+  height: 1px;
+  background: var(--ink);
+}
+.masthead {
+  max-width: var(--maxw-wide);
+  margin: 0 auto;
+  padding: 32px var(--gutter) 26px;
+  text-align: center;
+  display: block;
+}
+.masthead-title {
+  font-family: var(--font-serif);
+  font-size: clamp(40px, 7vw, 78px);
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -2.5px;
+  color: var(--ink);
+  text-transform: uppercase;
+}
+.masthead-title em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--gold-deep);
+  text-transform: none;
+  letter-spacing: -1px;
+}
+.masthead-sub {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(16px, 2vw, 22px);
+  color: var(--ink);
+  letter-spacing: 1px;
+  margin-top: 6px;
+}
+
+/* TOP BAR */
+.top-bar { background: var(--paper); border-bottom: 1px solid var(--rule); }
+.top-bar-inner {
+  max-width: var(--maxw-wide);
+  margin: 0 auto;
+  padding: 14px var(--gutter);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.top-bar-from,
+.top-bar-topics {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.top-bar-from a {
+  color: var(--gold-deep);
+  border-bottom: 1px solid var(--gold);
+  padding-bottom: 1px;
+}
+
+/* MAIN NAVIGATION */
+.main-nav { background: var(--paper); border-bottom: 1px solid var(--ink); }
+.main-nav-inner {
+  max-width: var(--maxw-wide);
+  margin: 0 auto;
+  padding: 16px var(--gutter);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.main-nav-links {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+}
+.main-nav-links a {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--ink);
+  padding: 6px 0;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.15s, color 0.15s;
+}
+.main-nav-links a:hover,
+.main-nav-links a.active {
+  border-bottom-color: var(--gold);
+  color: var(--gold-deep);
+}
+.main-nav-cta {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  padding: 10px 22px;
+  background: var(--ink);
+  color: var(--paper);
+  border-radius: 2px;
+  transition: background 0.15s ease;
+}
+.main-nav-cta:hover { background: var(--gold-deep); }
+
+/* BREADCRUMBS */
+.breadcrumb-bar {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 18px var(--gutter) 0;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.breadcrumb-bar a { color: var(--gold-deep); border-bottom: 1px solid var(--gold); padding-bottom: 1px; }
+.breadcrumb-sep { margin: 0 8px; color: var(--rule); }
+
+/* PAGE HEADER */
+.page-header {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 32px var(--gutter) 32px;
+  text-align: center;
+}
+.page-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  margin-bottom: 20px;
+}
+.page-title {
+  font-family: var(--font-serif);
+  font-size: clamp(38px, 6vw, 64px);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -1.5px;
+  color: var(--ink);
+  margin-bottom: 24px;
+}
+.page-title em { font-style: italic; color: var(--gold-deep); font-weight: 500; }
+.page-deck {
+  font-family: var(--font-serif);
+  font-size: clamp(19px, 2.4vw, 22px);
+  line-height: 1.5;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--muted);
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+/* GUIDE BLOCKS */
+.guide-list {
+  max-width: var(--maxw);
+  margin: 32px auto 0;
+  padding: 0 var(--gutter);
+}
+.guide-block {
+  background: var(--paper-pure);
+  border: 1px solid var(--rule);
+  border-top: 4px solid var(--gold);
+  padding: 36px 32px;
+  margin-bottom: 28px;
+  display: block;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+.guide-block:hover {
+  border-color: var(--gold-deep);
+  border-top-color: var(--gold-deep);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+.guide-block-header {
+  display: flex;
+  align-items: baseline;
+  gap: 18px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--rule);
+}
+.guide-block-num {
+  font-family: var(--font-serif);
+  font-size: 56px;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1;
+  letter-spacing: -2px;
+  flex-shrink: 0;
+}
+.guide-block-num em { font-style: italic; color: var(--gold-deep); font-weight: 400; }
+.guide-block-step {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  margin-bottom: 6px;
+}
+.guide-block-meta { flex-grow: 1; }
+.guide-block-title {
+  font-family: var(--font-serif);
+  font-size: clamp(24px, 3vw, 30px);
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--ink);
+  letter-spacing: -0.5px;
+}
+.guide-block-body {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-body);
+  margin-bottom: 18px;
+}
+.guide-block-why {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--muted);
+  padding-left: 16px;
+  border-left: 2px solid var(--gold);
+  margin-bottom: 20px;
+}
+.guide-block-link {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--ink);
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--gold);
+}
+.guide-block-link::after { content: " →"; }
+
+/* NEXT STEP CTA */
+.next-step-section {
+  max-width: var(--maxw);
+  margin: 32px auto 0;
+  padding: 48px var(--gutter);
+  text-align: center;
+  background: var(--paper-warm);
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+}
+.next-step-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  margin-bottom: 18px;
+}
+.next-step-title {
+  font-family: var(--font-serif);
+  font-size: clamp(28px, 4vw, 38px);
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--ink);
+  margin-bottom: 16px;
+  letter-spacing: -1px;
+}
+.next-step-title em { font-style: italic; color: var(--gold-deep); }
+.next-step-text {
+  font-family: var(--font-serif);
+  font-size: 17px;
+  line-height: 1.55;
+  color: var(--text-body);
+  max-width: 520px;
+  margin: 0 auto 28px;
+}
+.next-step-cta {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  padding: 16px 32px;
+  background: var(--ink);
+  color: var(--paper);
+  border-radius: 2px;
+  transition: background 0.15s ease;
+}
+.next-step-cta:hover { background: var(--gold-deep); }
+
+/* MORE FROM LIBRARY */
+.more-library {
+  max-width: var(--maxw);
+  margin: 64px auto 0;
+  padding: 0 var(--gutter);
+  text-align: center;
+}
+.more-library-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+.more-library-text {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  font-style: italic;
+  color: var(--text-body);
+  margin-bottom: 14px;
+}
+.more-library-link {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  border-bottom: 1px solid var(--gold);
+  padding-bottom: 3px;
+}
+
+/* FOOTER */
+.site-footer {
+  background: var(--ink);
+  color: var(--paper);
+  padding: 56px 0 32px;
+  margin-top: 96px;
+}
+.footer-inner {
+  max-width: var(--maxw-wide);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+  text-align: center;
+}
+.footer-title {
+  font-family: var(--font-serif);
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+.footer-sub {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 14px;
+  color: var(--gold-light);
+  margin-bottom: 32px;
+}
+.footer-rule { width: 80px; height: 1px; background: var(--gold); margin: 0 auto 32px; }
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+.footer-links a { color: var(--paper); opacity: 0.85; transition: opacity 0.15s; }
+.footer-links a:hover { opacity: 1; color: var(--gold-light); }
+.footer-meta {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: var(--muted);
+  text-transform: uppercase;
+  line-height: 1.8;
+}
+.footer-meta a { color: var(--gold-light); }
+
+/* MOBILE */
+@media (max-width: 720px) {
+  .guide-block { padding: 28px 22px; }
+  .guide-block-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  .guide-block-num { font-size: 44px; }
+  .main-nav-inner { gap: 12px; }
+  .main-nav-links { gap: 18px; }
+  .main-nav-links a { font-size: 10px; letter-spacing: 1.8px; }
+  .main-nav-cta { padding: 9px 16px; font-size: 10px; letter-spacing: 1.8px; }
+}
+
+@media (max-width: 480px) {
+  .top-bar-inner { justify-content: center; }
+  .top-bar-topics { display: none; }
+  .footer-links { gap: 18px; }
+  .footer-links a { font-size: 10px; }
+  .main-nav-inner { flex-direction: column; align-items: center; }
+  .main-nav-links { gap: 16px; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="masthead-wrap">
+    <a href="/" class="masthead">
+      <div class="masthead-title">Tokenized<em> Report</em></div>
+      <div class="masthead-sub">The weekly editorial brief on digital ownership.</div>
+    </a>
+  </div>
+</header>
+
+<div class="top-bar">
+  <div class="top-bar-inner">
+    <div class="top-bar-from">From <a href="https://womenincryptoglobal.com" target="_blank" rel="noopener">Women in Crypto Global</a></div>
+    <div class="top-bar-topics">RWA · STABLECOIN YIELD · TOKENIZATION</div>
+  </div>
+</div>
+
+<nav class="main-nav" aria-label="Primary">
+  <div class="main-nav-inner">
+    <ul class="main-nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/start-here/" class="active">Start Here</a></li>
+      <li><a href="/library/">Library</a></li>
+      <li><a href="https://tokenizedreport.beehiiv.com/" target="_blank" rel="noopener">Archive<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    <a href="/#subscribe" class="main-nav-cta">Subscribe</a>
+  </div>
+</nav>
+
+<nav class="breadcrumb-bar" aria-label="Breadcrumb">
+  <a href="/">Home</a><span class="breadcrumb-sep">/</span>Start Here
+</nav>
+
+<header class="page-header">
+  <div class="page-eyebrow">For Readers New to Tokenization</div>
+  <h1 class="page-title">Three guides to read <em>first</em>.</h1>
+  <p class="page-deck">If tokenization is new to you, these three field guides build the foundation. Read them in order, then everything in the newsletter will make sense.</p>
+</header>
+
+<section class="guide-list">
+
+  <a href="/library/glossary/" class="guide-block">
+    <div class="guide-block-header">
+      <div class="guide-block-num">01</div>
+      <div class="guide-block-meta">
+        <div class="guide-block-step">Step One · Learn the Language</div>
+        <h2 class="guide-block-title">The Tokenization Glossary</h2>
+      </div>
+    </div>
+    <p class="guide-block-body">Plain-English definitions of 25 terms that show up in tokenization marketing, offering documents, and regulatory text. From "atomic settlement" to "SPV bankruptcy remoteness," every term defined in one or two sentences with no jargon to chase.</p>
+    <p class="guide-block-why">Start here because the rest of the field assumes you already know these words. Most readers do not. Build the vocabulary first so the news reads like news, not code.</p>
+    <span class="guide-block-link">Read the Glossary</span>
+  </a>
+
+  <a href="/library/vetting-checklist/" class="guide-block">
+    <div class="guide-block-header">
+      <div class="guide-block-num">02</div>
+      <div class="guide-block-meta">
+        <div class="guide-block-step">Step Two · Learn the Framework</div>
+        <h2 class="guide-block-title">The Tokenized Asset Vetting Checklist</h2>
+      </div>
+    </div>
+    <p class="guide-block-body">Ten questions every investor should be able to answer before putting money into a tokenized offering. Who is the issuer. Where does the underlying asset sit. What happens if the platform fails. The framework professional analysts use, distilled for retail readers.</p>
+    <p class="guide-block-why">Read this second because once you know the words, you need the questions. Without a vetting framework, every offering sounds equally legitimate. This is how you separate them.</p>
+    <span class="guide-block-link">Read the Checklist</span>
+  </a>
+
+  <a href="/library/chains/" class="guide-block">
+    <div class="guide-block-header">
+      <div class="guide-block-num">03</div>
+      <div class="guide-block-meta">
+        <div class="guide-block-step">Step Three · Learn the Infrastructure</div>
+        <h2 class="guide-block-title">Where Your Tokenized Assets Actually Live</h2>
+      </div>
+    </div>
+    <p class="guide-block-body">A field guide to the blockchains hosting real-world assets in 2026. Ethereum, Solana, Base, Avalanche, Arbitrum, Polygon. What each chain is built for, who is issuing on it, and how to read a token's chain context before you commit to it.</p>
+    <p class="guide-block-why">Finish here because tokenized assets live on chains, and not all chains are equal. Knowing where an asset lives tells you a lot about who built it, who custodies it, and what could go wrong.</p>
+    <span class="guide-block-link">Read the Chain Guide</span>
+  </a>
+
+</section>
+
+<section class="next-step-section">
+  <div class="next-step-eyebrow">When You Finish These</div>
+  <h2 class="next-step-title">Subscribe and get the rest <em>weekly</em>.</h2>
+  <p class="next-step-text">Tokenized Report lands every Sunday with one deep editorial story, five numbers worth knowing, and one concept fully explained. Free, no spam, unsubscribe anytime.</p>
+  <a href="/#subscribe" class="next-step-cta">Subscribe Free</a>
+</section>
+
+<div class="more-library">
+  <div class="more-library-label">Browse Further</div>
+  <p class="more-library-text">Two more field guides for after the foundation: Red-Flag Phrases and Q1 2026 Numbers.</p>
+  <a href="/library/" class="more-library-link">Browse the full library →</a>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-title">Tokenized Report</div>
+    <div class="footer-sub">From Women in Crypto Global.</div>
+    <div class="footer-rule"></div>
+    <div class="footer-links">
+      <a href="/library/">Library</a>
+      <a href="https://tokenizedreport.beehiiv.com/" target="_blank" rel="noopener">Archive</a>
+      <a href="/about/">About</a>
+      <a href="/editorial-standards/">Editorial Standards</a>
+      <a href="https://womenincryptoglobal.com">The Publication</a>
+      <a href="mailto:hello@womenincryptoglobal.com">Contact</a>
+    </div>
+    <div class="footer-meta">
+      © 2026 Women in Crypto Global · All rights reserved<br>
+      Editorial &amp; partnerships: <a href="mailto:hello@womenincryptoglobal.com">hello@womenincryptoglobal.com</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
